@@ -1,0 +1,10 @@
+/.php_cs.cache
+/.phpunit
+/build/*
+/composer.lock
+/phpunit.xml
+/tests/acceptance.conf.php
+/tests/smoke.conf.php
+/vendor/
+/.idea
+/node_modules/
