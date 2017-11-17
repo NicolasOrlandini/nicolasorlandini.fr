@@ -1,0 +1,300 @@
+
+body{
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    color: #757575;
+    text-rendering: optimizeLegibility;
+}
+
+.prenom{
+    font-size: 85px;
+    font-weight: 300;
+}
+
+.nom{
+    font-size: 90px;
+    font-weight: 280;
+}
+
+.background{
+    text-align: center;
+    padding: 50px;
+}
+
+.background-dark{
+    background: #f6f6f6;
+}
+
+.background-dark-dark{
+    background: #e0e0e0;
+}
+
+hr{
+    background: rgba(0,0,0,.25);
+    margin: 0;
+}
+
+.contact{
+    background: #0f9d58;
+    color: #fff;
+    margin: 10px;
+    height: 52px;
+    padding: 10px;
+    width: 180px;
+    margin: 0 auto;
+    display: block;
+    border: none;
+    border-radius: 2px;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    overflow: hidden;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+.contact:hover{
+    background: #1bdb7b;
+}
+
+.pie{
+    padding: 20px;
+}
+
+
+  .mdl-layout__header-row {
+    padding: 0 40px;
+  }
+  
+  .mdl-layout.has-drawer .mdl-layout__header-row {
+    padding: 0 40px 0 80px;
+  }
+
+.page-title {
+    background: url(../img/keyboard.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    text-align: center;
+    padding: 40px;
+  }
+  
+  .page-title::before {
+    content: "";
+    display: block;
+    -webkit-filter: blur(1px) brightness(0.5);
+    -moz-filter: blur(1px) brightness(0.5);
+    -ms-filter: blur(1px) brightness(0.5);
+    -o-filter: blur(1px) brightness(0.5);
+    filter: blur(1px) brightness(0.5);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: inherit;
+    z-index: 0;
+  }
+  
+  .content {
+    position: relative;
+    z-index: 10;
+    padding-top: 50px;
+    padding-bottom: 90px;
+  }
+  
+  .title {
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    color: whitesmoke;
+     /*color: #757575;*/
+    padding: 30px;
+    padding-top: 150px;
+  }
+  
+  .title-cadre {
+    color: white;
+    padding: 17px;
+    margin-bottom: 20px;
+    border: 1px solid gray;
+    display: inline-block;
+    width: 70%;
+  }
+
+  .title-activite {
+    font-size: 1.9em;
+    line-height: 1.2;
+  }
+
+  .title-regime{
+    font-size: 1.8em;
+    font-weight: 100;
+  }
+
+  .site-header {
+    background: #fff;
+    color: #757575;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.35);
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+  }
+
+.nav-link {
+    font-size: 12px;
+    font-size: .75rem;
+    padding: 0 10px;
+    padding: 0 .625rem;
+    color: #848484;
+    display: inline-block;
+}
+
+.justify{
+    text-align: justify; 
+}
+
+.cv-text{
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+nav>a{
+    color: #757575 !important;
+    font-family: "Roboto","Helvetica","Arial",sans-serif !important;
+  }
+
+.pie{
+    margin: 0 auto;
+    width: 104px;
+    height: 52px;
+}
+
+.subtitle{
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    color: #757575;
+    font-size: 50px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    font-weight: 400;
+}
+
+.table-comp{
+    vertical-align: middle;
+    width: 100%;
+    text-align: center;
+}
+
+table {
+    table-layout: auto !important;
+}
+
+tr td {
+    width: auto !important;
+}
+
+h4{
+    margin-top: -10px;
+}
+
+.text-services{
+    font-size: 1.2em;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 30px;
+}
+
+.services-cadre{
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 1px solid #e0e0e0;
+    background: #fcfcfc;
+    width: 300px;
+    height: 500px;
+}
+
+.services-img{
+    margin-top: 30px;
+}
+
+.bottom-footer{
+    background: #363636;
+}
+
+.pres-infos{
+    font-size: 1.2em;
+    font-weight: 600;
+    margin: 7px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 750px) {
+	table {
+		overflow-x: auto;
+		display: block;
+    }
+
+    .prenom{
+        font-size: 42px;
+        font-weight: 400;
+    }
+    
+    .nom{
+        font-size: 45px;
+        font-weight: 500;
+    }
+
+    .background{
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .page-title {
+        padding: 10px;
+    }
+
+    .subtitle{
+        font-size: 30px;
+        margin-bottom: 10px !important;
+        margin-top: 5px;
+    }
+
+    .title {
+        padding: 18px;
+        padding-top: 70px;
+      }
+
+    .title-cadre {
+        padding: 10px;
+        width: 90%;
+    }
+
+    .title-activite {
+        font-size: 1.2em;
+        line-height: 1.2;
+      }
+    
+      .title-regime{
+        font-size: 1.1em;
+        font-weight: 100;
+      }
+
+      .pres-infos{
+        font-size: 1.2em;
+        font-weight: 500;
+        margin: 5px;
+    }
+
+    .services-cadre{
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 85%;
+        height: 500px;
+    }
+}

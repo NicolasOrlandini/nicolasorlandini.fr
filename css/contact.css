@@ -1,14 +1,3 @@
-.portfolio-header {
-  position: relative;
-  background-image: url(images/header-bg.jpg);
-}
-
-.portfolio-header .mdl-layout__header-row {
-  padding: 0;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
 
 .mdl-layout__title {
   font-size: 14px;
