@@ -36,7 +36,7 @@ hr{
 .contact{
     background: #0f9d58;
     color: #fff;
-    margin: 10px;
+    /*margin: 10px;*/
     height: 52px;
     padding: 10px;
     width: 180px;
@@ -231,6 +231,13 @@ h4{
     margin: 7px;
     text-decoration: none;
 }
+
+.customFooter{ background-color: #fff !important; padding: 0;}
+.divUp { padding: 0; width: 100%; background-color: #757575; }
+.divDown { padding: 0; width: 100%; }
+.mdl-mega-footer__drop-down-section{ margin-left: 10px !important; }
+.mdl-mini-footer__left-section { margin-left: 10px !important; }
+.mdl-mini-footer__right-section { margin-right: 10px !important; vertical-align: middle; text-align: center; }
 
 @media screen and (max-width: 750px) {
 	table {
