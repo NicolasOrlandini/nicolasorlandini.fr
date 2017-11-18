@@ -5,6 +5,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vous avez une idée de projet d'application mobile Android ou Windows 10 Mobile ? Vous êtes sur Nice ? Alors je peux vous aider !">
+    <meta name="keywords" content="Android, freelance, UWP, mobile, Nice, Développement mobile, Nicolas Orlandini, développeur mobile Nice, développeur android Nice" />
+    <meta name="author" content="Nicolas Orlandini">
+    <meta name="copyright" content="© Nicolas Orlandini - 2017" />   
     <link rel="stylesheet" href="./mdl/material.min.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/social.css">
@@ -13,6 +17,8 @@
     <link rel='stylesheet prefetch' href='http:////netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css'>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <link rel ="icon" type="image/png" href="images/favicon.png" >
+    <link rel ="apple-touch-icon" href="images/apple-touch-icon.png">
     <script src="./mdl/material.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
     <script src="./mdl/material.min.js"></script>
@@ -20,7 +26,7 @@
     <script src="./js/index.js"></script>
     <script src="./js/contact.js"></script>
 
-    <title>Nicolas Orlandini</title>
+    <title>Nicolas Orlandini | Développeur d'applications mobiles Android, UWP et web en Freelance | Nice</title>
 </head>
 
 <body>
@@ -110,7 +116,7 @@
                         <span class="nom">ORLANDINI</span>
                     </h1>
                     <div class="title-cadre">
-                        <p class="title-activite">Développeur d'applications mobiles et web en Freelance</p>
+                        <h1 class="title-activite">Développeur d'applications mobiles et web en Freelance</h1>
                         <p class="title-regime">Micro-Entrepreneur</p>
                     </div>
                     <button class="mdl-button contact mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--white-colored">
@@ -119,7 +125,7 @@
                 </div>
             </div>
             <div class="background" id="serv">
-                <p class="subtitle">Mes services</p>
+                <h2 class="subtitle">Mes services</h2>
                 <ul class="list-unstyled list-inline">
                     <li class="services-cadre">
                         <img class="services-img" src="./img/android_logo_2.png" width="70px" alt="Android logo">
@@ -138,7 +144,7 @@
                 </ul>
             </div>
             <div class="background background-dark-dark" id="pres">
-                <p class="subtitle">Présentation</p>
+                <h2 class="subtitle">Présentation</h2>
                 <div class="mdl-grid">
                     <div class="mdl-cell mdl-cell--4-col">
                         <i class="material-icons">call</i>
@@ -183,7 +189,7 @@
                 </div>
             </div>
             <div class="background background-dark" id="comp">
-                <p class="subtitle">Mes compétences</p>
+                <h2 class="subtitle">Mes compétences</h2>
 
                 <ul class="list-unstyled list-inline">
                     <li>
@@ -209,7 +215,7 @@
                 </ul>
             </div>
             <div class="background" id="contact">
-                <p class="subtitle">Me contacter</p>
+                <h2 class="subtitle">Me contacter</h2>
                     <?php include_once 'contact.php'; ?>
             </div>
     </main>
