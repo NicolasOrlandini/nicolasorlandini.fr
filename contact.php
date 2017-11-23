@@ -5,13 +5,22 @@ $secret = '6LftGzgUAAAAANgO8xSCE1avLBgJQKUAJPzJjPzb'; // votre clé privée
 ?>
 <div class="mdl-grid portfolio-max-width portfolio-contact">
     <form action="#" class="" method="POST">
-        <div class="mdl-selectfield mdl-js-selectfield">
-            <select id="myselect" name="myselect" class="mdl-selectfield__select">
-                <option value=""></option>
-                <option value="option0_value">Madame</option>
-                <option value="option1_value">Monsieur</option>
-            </select>
-            <label class="mdl-selectfield__label" for="myselect">Civilité</label>
+        <div class="container-civility">
+            <label class="civility" for="">Civility</label>
+            <div class="">
+                <label class = "mdl-radio mdl-js-radio mdl-js-ripple-effect radiobutton"
+                       for = "monsieur">
+                    <input type = "radio" id = "monsieur" name = "gender"
+                           class = "mdl-radio__button" >
+                    <span class = "mdl-radio__label">Monsieur</span>
+                </label>
+            </div>
+            <div class="">
+                <label class = "mdl-radio mdl-js-radio mdl-js-ripple-effect radiobutton" for = "madame">
+                    <input type = "radio" id = "madame" name = "gender" class = "mdl-radio__button" />
+                    <span class = "mdl-radio__label">Madame</span>
+                </label>
+            </div>
         </div><br>
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
             <input class="mdl-textfield__input" pattern="[A-Z,a-z, ]*" type="text" id="Name">
@@ -30,9 +39,22 @@ $secret = '6LftGzgUAAAAANgO8xSCE1avLBgJQKUAJPzJjPzb'; // votre clé privée
             <input class="mdl-textfield__input" type="text" id="telephone">
             <label class="mdl-textfield__label" for="telephone">Numéro de téléphone...</label>
         </div>
-        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <input class="mdl-textfield__input" type="text" id="company">
-            <label class="mdl-textfield__label" for="company">Plateforme...</label>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label plateforme">
+            <label for="plateforme">Plateforme de votre projet</label>
+            <div>
+                <label class = "mdl-checkbox mdl-js-checkbox" for = "checkbox1">
+                    <input type="checkbox" id ="checkbox1" class="mdl-checkbox__input">
+                    <i class="material-icons androidColor">android</i><span class = "mdl-checkbox__label">Android</span>
+                </label>
+            </div>
+
+            <div>
+                <label class = "mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"
+                       for = "checkbox2">
+                    <input type = "checkbox" id = "checkbox2" class = "mdl-checkbox__input">
+                    <i class="material-icons iosColor">phone_iphone</i><span class = "mdl-checkbox__label">iOS</span>
+                </label>
+            </div>
         </div>
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
             <input class="mdl-textfield__input" type="text" id="subject">

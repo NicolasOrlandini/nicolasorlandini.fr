@@ -5,10 +5,11 @@ window.onload = function () {
     var cSharp = document.getElementById("pieChartCSharp");
     var java = document.getElementById("pieChartJava");
     var htmlCss = document.getElementById("pieChartHtmlCss");
+    materializeSelects();
 
     var legend = {
         display: false
-    }
+    };
 
     var options = { 
         responsive: false,
