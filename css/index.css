@@ -221,10 +221,6 @@ h4{
     margin-top: 30px;
 }
 
-.bottom-footer{
-    background: #363636;
-}
-
 .pres-infos{
     font-size: 1.2em;
     font-weight: 600;
@@ -232,12 +228,36 @@ h4{
     text-decoration: none;
 }
 
-.customFooter{ background-color: #fff !important; padding: 0;}
-.divUp { padding: 0; width: 100%; background-color: #757575; }
-.divDown { padding: 0; width: 100%; }
-.mdl-mega-footer__drop-down-section{ margin-left: 10px !important; }
-.mdl-mini-footer__left-section { margin-left: 10px !important; }
-.mdl-mini-footer__right-section { margin-right: 10px !important; vertical-align: middle; text-align: center; }
+.customFooter{ 
+    padding: 0;
+}
+
+.divUp { 
+    background-color: #3f3f3f; 
+    padding: 0;
+    width: 100%; 
+}
+
+.divDown { 
+    background: #363636;
+    padding: 0;
+    width: 100%; 
+}
+
+.mdl-mega-footer__drop-down-section { 
+    margin-left: 10px !important; 
+}
+
+.mdl-mini-footer__left-section { 
+    margin-left: 10px !important; 
+}
+
+.mdl-mini-footer__right-section { 
+    margin-right: 10px !important; 
+    margin-left: 10px !important; 
+    vertical-align: middle !important; 
+    text-align: center !important; 
+}
 
 @media screen and (max-width: 750px) {
 	table {
@@ -303,5 +323,17 @@ h4{
         margin-right: 10px;
         width: 85%;
         height: 500px;
+    }
+
+    .mdl-mini-footer__left-section { 
+        text-align: center !important; 
+    }
+    
+    .mdl-mini-footer__right-section { 
+        text-align: center !important; 
+    }
+
+    .mdl-mega-footer__heading-checkbox {
+        margin-top: 0 !important;
     }
 }

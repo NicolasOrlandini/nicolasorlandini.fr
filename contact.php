@@ -6,7 +6,7 @@ $secret = '6LftGzgUAAAAANgO8xSCE1avLBgJQKUAJPzJjPzb'; // votre clé privée
 <div class="mdl-grid portfolio-max-width portfolio-contact">
     <form action="#" class="" method="POST">
         <div class="container-civility">
-            <label class="civility" for="">Civility</label>
+            <label class="civility" for="">Civilité</label>
             <div class="">
                 <label class = "mdl-radio mdl-js-radio mdl-js-ripple-effect radiobutton"
                        for = "monsieur">
@@ -75,14 +75,10 @@ $secret = '6LftGzgUAAAAANgO8xSCE1avLBgJQKUAJPzJjPzb'; // votre clé privée
                 <input type="file" name="NAME" id="ID" onchange="document.getElementById('TEXT_ID').value=this.files[0].name;" />
             </div>
         </div>
-        <br>
-        <br>
         <?php require_once 'getCaptcha.php'; ?>
-        <br>
-        <br>
         <form action="getCaptcha.php" method="POST">
             <div class="g-recaptcha" data-sitekey="<?php echo $siteKey; ?>"></div>
-            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent btnSubmit" type="submit">
+            <button class="mdl-button contact mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--white-colored" type="submit">
                 ENVOYER
             </button>
         </form>

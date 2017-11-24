@@ -19,7 +19,6 @@
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
     <link rel ="icon" type="image/png" href="images/favicon.png" >
     <link rel ="apple-touch-icon" href="images/apple-touch-icon.png">
-    <script src="./mdl/material.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
     <script src="./mdl/material.min.js"></script>
     <script src="./js/chart/Chart.js"></script>
@@ -119,9 +118,11 @@
                         <h1 class="title-activite">Développeur d'applications mobiles et web en Freelance</h1>
                         <p class="title-regime">Micro-Entrepreneur</p>
                     </div>
-                    <button class="mdl-button contact mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--white-colored">
-                        Me contacter
-                    </button>
+                    <form action="#contact">
+                        <button class="mdl-button contact mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--white-colored" type="submit">
+                            Me contacter
+                        </button>
+                    </form>
                 </div>
             </div>
             <div class="background" id="serv">
@@ -172,7 +173,8 @@
                         Cette formation m'a permis d'explorer la plupart des langages orientés mobilité et 
                         d'acquérir de solides compétences dans ce domaine.
                         <br>
-                        <br> J'ai décidé de me lancer dans l'aventure de l'auto-entreprenariat car, pour moi, fournir un travail
+                        <br> 
+                        J'ai décidé de me lancer dans l'aventure de l'auto-entreprenariat car, pour moi, fournir un travail
                         de qualité est indispensable et fait toute la différence. Mon statut me permet de m'investir totalement
                         dans les projets que je réalise pour obtenir un résultat au plus proche de vos attentes.
                     </div>
@@ -250,7 +252,7 @@
             <h1 class="mdl-mega-footer__heading">Me contacter</h1>
             <ul class="mdl-mega-footer__link-list">
                 <li>
-                    <a href="#">Contact</a>
+                    <a href="#contact">Contact</a>
                 </li>
                 <li>
                     <a href="mailto:nicolas.orlandini@outlook.fr">nicolas.orlandini@outlook.fr</a>
@@ -261,38 +263,36 @@
             </ul>
         </div>
         <div class="mdl-mega-footer__drop-down-section">
-            <label>
-                <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-            </label>
-            <h1 class="mdl-mega-footer__heading">Mes réseaux</h1>
-            <ul class="mdl-mega-footer__link-list">
-                <ul class="social-icons icon-circle icon-rotate list-unstyled list-inline">
-                    <li>
-                        <a href="https://github.com/NicolasOrlandini">
-                            <i class="fa fa-github"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/nicolas-orlandini-1b3871129/">
-                            <i class="fa fa-linkedin"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-google-plus"></i>
-                        </a>
-                    </li>
+        <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+        <h1 class="mdl-mega-footer__heading">Mes réseaux</h1>
+        <ul class="mdl-mega-footer__link-list">
+            <ul class="social-icons icon-circle icon-rotate list-unstyled list-inline">
+                <li>
+                    <a href="https://github.com/NicolasOrlandini">
+                        <i class="fa fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/nicolas-orlandini-1b3871129/">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-google-plus"></i>
+                    </a>
+                </li>
 
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-skype"></i>
-                        </a>
-                    </li>
-                </ul>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-skype"></i>
+                    </a>
+                </li>
             </ul>
-        </div>
+        </ul>
     </div>
-    <div class="mdl-mini-footer bottom-footer divDown">
+    </div>
+    <div class="mdl-mini-footer divDown">
         <div class="mdl-mini-footer__left-section">
             <div class="mdl-logo">© Nicolas ORLANDINI</div>
             <p>Tous droits réservés - 2017</p>
