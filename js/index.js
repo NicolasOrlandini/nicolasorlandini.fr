@@ -5,7 +5,6 @@ window.onload = function () {
     var cSharp = document.getElementById("pieChartCSharp");
     var java = document.getElementById("pieChartJava");
     var htmlCss = document.getElementById("pieChartHtmlCss");
-    materializeSelects();
 
     var legend = {
         display: false
@@ -23,7 +22,7 @@ window.onload = function () {
             }
         },
         scaleShowLabels : false
-    }
+    };
 
     var androidDoughnutChart = new Chart(andr, {
         type: 'doughnut',
@@ -66,7 +65,7 @@ window.onload = function () {
             }]
         },
 
-        options: options,
+        options: options
     });
 
     var iOSDoughnutChart = new Chart(cSharp, {
@@ -88,7 +87,7 @@ window.onload = function () {
             }]
         },
 
-        options: options,
+        options: options
     });
 
     var iOSDoughnutChart = new Chart(java, {
@@ -110,7 +109,7 @@ window.onload = function () {
             }]
         },
 
-        options: options,
+        options: options
     });
 
     var iOSDoughnutChart = new Chart(htmlCss, {
@@ -132,7 +131,7 @@ window.onload = function () {
             }]
         },
 
-        options: options,
+        options: options
     });
     
     $("a[href^='#']").click(function (e) {
@@ -169,4 +168,4 @@ window.onload = function () {
 			$('html,body').animate({ scrollTop: yPos - 100 }, 600); // On décale de 40 pixels l'affichage pour ne pas coller le bord haut de l'affichage du navigateur et on défile en 1 seconde jusqu'à l'ancre.
 		}
 	});
-}
+};

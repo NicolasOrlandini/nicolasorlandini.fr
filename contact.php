@@ -64,6 +64,13 @@ $secret = '6LftGzgUAAAAANgO8xSCE1avLBgJQKUAJPzJjPzb'; // votre clé privée
             <input class="mdl-textfield__input" type="text" id="company">
             <label class="mdl-textfield__label" for="company">Entreprise...</label>
         </div>
+        <div>
+            <div class="mdl-textfield mdl-js-textfield mdl-chipfield" id="demo-2">
+                <input type="hidden" class="mdl-chipfield__input" name="demo-2" value="">
+                <input class="mdl-textfield__input" type="text" id="my-input-2">
+                <label class="mdl-textfield__label" for="my-input-2">Technologies</label>
+            </div>
+        </div>
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
             <textarea class="mdl-textfield__input" type="text" rows="5" id="note"></textarea>
             <label class="mdl-textfield__label" for="note">Parlez-moi de votre projet...</label>

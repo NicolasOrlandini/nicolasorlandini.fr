@@ -1,3 +1,28 @@
+/*  */
+
+function ready(fn) {
+    if(document.readyState != 'loading') {
+        fn();
+    } else {
+        document.addEventListener('DOMContentLoaded', fn);
+    }
+}
+
+ready(function() {
+    new window['MaterialChipInput'](document.getElementById('demo-0'));
+    new window['MaterialChipInput'](document.getElementById('demo-1'));
+    var withSearch = new window['MaterialChipInput'](document.getElementById('demo-2'));
+    withSearch.addSearch(function(query, callback) {
+        var techno = ["Prout", "Cacahuète", "Macbook", "Emily Ratajkowski", "Clara Morgane", "Tchitchi"];
+        var regex = new RegExp(query, 'i');
+        callback(techno.filter(function(item) {
+            return item.search(regex) != -1;
+        }));
+    });
+});
+
+/* Vérification du recaptcha */
+
 var verifyCallback = function (response) {
     alert(response);
 };
@@ -19,20 +44,3 @@ var onloadCallback = function () {
         'theme': 'dark'
     });
 };
-
-function materializeSelects() {
-    var label, parentEl;
-    document.querySelectorAll('select').forEach(function(control) {
-        parentEl = control.parentElement;
-        control.classList.add('mdl-selectfield__select');
-        if (parentEl.tagName !== 'DIV') {
-            return;
-        }
-        parentEl.classList.add('mdl-selectfield', 'mdl-js-selectfield');
-        label = parentEl.querySelector('label');
-        if (label) {
-            label.setAttribute('for', control.id || control.name)
-            label.classList.add('mdl-selectfield__label');
-        }
-    });
-}

@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./css/social.css">
     <link rel="stylesheet" href="./css/contact.css" />
     <link rel="stylesheet" href="./css/app.css" />
+    <link rel="stylesheet" href="./css/chips.css">
     <link rel='stylesheet prefetch' href='http:////netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css'>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
@@ -24,6 +25,7 @@
     <script src="./js/chart/Chart.js"></script>
     <script src="./js/index.js"></script>
     <script src="./js/contact.js"></script>
+    <script src="./js/chips.js"></script>
 
     <title>Nicolas Orlandini | Développeur d'applications mobiles Android, UWP et web en Freelance | Nice</title>
 </head>
