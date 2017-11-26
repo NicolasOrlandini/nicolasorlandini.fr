@@ -129,22 +129,31 @@
             </div>
             <div class="background" id="serv">
                 <h2 class="subtitle">Mes services</h2>
-                <ul class="list-unstyled list-inline">
-                    <li class="services-cadre">
+                <div class="mdl-grid services-grid">
+                    <div class="mdl-cell mdl-cell--4-col services-cadre">
                         <img class="services-img" src="./img/android_logo_2.png" width="70px" alt="Android logo">
-                        <p class="text-services">Développement Android</p>
-                    </li>
-                    <li class="services-cadre">
+                        <p class="services-text">Développement Android</p>
+                        <p>Développement d'application mobile Android (JAVA)</p>
+                        <p>Ajout de fonctionnalités sur une application existante</p>
+                        <p>Mise à jour fonctionnelle</p>
+                        <p>Mise à jour graphique</p>
+                    </div>
+                    <div class="mdl-cell mdl-cell--4-col services-cadre">
                         <img class="services-img" src="./img/Apple_Computer_Logo_rainbow.png" width="70px" alt="Apple logo">
-                        <p class="text-services">Développement iOS</p>
-                    </li>
-
-                    <li class="services-cadre">
+                        <p class="services-text">Développement iOS</p>
+                    </div>
+                    <div class="mdl-cell mdl-cell--4-col services-cadre">
                         <img class="services-img" src="./img/windows_logo.png" width="70px" alt="C# logo">
-                        <p class="text-services">Développement UNIVERSAL WINDOWS PLATFORM</p>
+                        <p class="services-text">Développement UNIVERSAL WINDOWS PLATFORM</p>
                         <p>Compatible Windows 10 Mobile et Windows 10 PC</p>
-                    </li>
-                </ul>
+                    </div>
+                    <div class="mdl-cell mdl-cell--4-col services-cadre">
+                        <img class="services-img" src="./img/" width="70px" alt="outils logo">
+                        <p class="services-text">Développement des outils associés aux applications</p>
+                        <p>API REST JAVA</p>
+                        <p>Interface d'administation</p>
+                    </div>
+                </div>
             </div>
             <div class="background background-dark-dark" id="pres">
                 <h2 class="subtitle">Présentation</h2>
@@ -218,7 +227,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="background" id="contact">
+            <div class="background contact-background" id="contact">
                 <h2 class="subtitle">Me contacter</h2>
                     <?php include_once 'contact.php'; ?>
             </div>
