@@ -130,7 +130,7 @@
             <div class="background" id="serv">
                 <h2 class="subtitle">Mes services</h2>
                 <div class="mdl-grid services-grid">
-                    <div class="mdl-cell mdl-cell--4-col services-cadre">
+                    <div class="mdl-cell mdl-cell--3-col services-cadre">
                         <img class="services-img" src="./img/android_logo_2.png" width="70px" alt="Android logo">
                         <p class="services-text">Développement Android</p>
                         <p>Développement d'application mobile Android (JAVA)</p>
@@ -138,16 +138,16 @@
                         <p>Mise à jour fonctionnelle</p>
                         <p>Mise à jour graphique</p>
                     </div>
-                    <div class="mdl-cell mdl-cell--4-col services-cadre">
+                    <div class="mdl-cell mdl-cell--3-col services-cadre">
                         <img class="services-img" src="./img/Apple_Computer_Logo_rainbow.png" width="70px" alt="Apple logo">
                         <p class="services-text">Développement iOS</p>
                     </div>
-                    <div class="mdl-cell mdl-cell--4-col services-cadre">
+                    <div class="mdl-cell mdl-cell--3-col services-cadre">
                         <img class="services-img" src="./img/windows_logo.png" width="70px" alt="C# logo">
                         <p class="services-text">Développement UNIVERSAL WINDOWS PLATFORM</p>
                         <p>Compatible Windows 10 Mobile et Windows 10 PC</p>
                     </div>
-                    <div class="mdl-cell mdl-cell--4-col services-cadre">
+                    <div class="mdl-cell mdl-cell--3-col services-cadre">
                         <img class="services-img" src="./img/" width="70px" alt="outils logo">
                         <p class="services-text">Développement des outils associés aux applications</p>
                         <p>API REST JAVA</p>
@@ -161,7 +161,7 @@
                     <div class="mdl-cell mdl-cell--4-col">
                         <i class="material-icons">call</i>
                         <p class="pres-infos">
-                            <a href="tel:0620703004">06 20 70 30 04</a>
+                            <a class="bio-link" href="tel:0620703004">06 20 70 30 04</a>
                         </p>
                     </div>
                     <div class="mdl-cell mdl-cell--4-col">
@@ -171,7 +171,7 @@
                     <div class="mdl-cell mdl-cell--4-col">
                         <i class="material-icons">mail_outline</i>
                         <p class="pres-infos">
-                            <a href="mailto:nicolas.orlandini@outlook.fr">nicolas.orlandini@outlook.fr</a>
+                            <a class="bio-link" href="mailto:nicolas.orlandini@outlook.fr">nicolas.orlandini@outlook.fr</a>
                         </p>
                     </div>
                 </div>
@@ -240,13 +240,13 @@
             <h1 class="mdl-mega-footer__heading">Mes informations</h1>
             <ul class="mdl-mega-footer__link-list">
                 <li>
-                    <a href="#pres">Présentation</a>
+                    <a class="footer-link" href="#pres">Présentation</a>
                 </li>
                 <li>
-                    <a href="#comp">Compétences</a>
+                    <a class="footer-link" href="#comp">Compétences</a>
                 </li>
                 <li>
-                    <a href="#">Formation</a>
+                    <a class="footer-link" href="#">Formation</a>
                 </li>
             </ul>
         </div>
@@ -263,13 +263,13 @@
             <h1 class="mdl-mega-footer__heading">Me contacter</h1>
             <ul class="mdl-mega-footer__link-list">
                 <li>
-                    <a href="#contact">Contact</a>
+                    <a class="footer-link" href="#contact">Contact</a>
                 </li>
                 <li>
-                    <a href="mailto:nicolas.orlandini@outlook.fr">nicolas.orlandini@outlook.fr</a>
+                    <a class="footer-link" href="mailto:nicolas.orlandini@outlook.fr">nicolas.orlandini@outlook.fr</a>
                 </li>
                 <li>
-                    <a href="tel:0620703004">06 20 70 30 04</a>
+                    <a class="footer-link" href="tel:0620703004">06 20 70 30 04</a>
                 </li>
             </ul>
         </div>

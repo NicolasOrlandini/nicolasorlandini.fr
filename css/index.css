@@ -14,6 +14,27 @@ body{
     font-size: 90px;
     font-weight: 280;
 }
+a {
+    color: #4b7d2f;
+    text-decoration: none;
+}
+
+.bio-link {
+    transition: all 100ms cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.bio-link:hover {
+    color: #4b7d2f;
+    text-decoration: underline;
+}
+
+.mdl-button--fab.mdl-button--colored {
+    background: #6ab344;
+}
+
+.mdl-button--fab.mdl-button--colored:hover {
+    background: #4b7d2f;
+}
 
 .background{
     text-align: center;
@@ -21,16 +42,16 @@ body{
 }
 
 .background-dark{
-    background: #f6f6f6;
+    background: #f5f5f5;
 }
 
 .background-dark-dark{
-    background: #e0e0e0;
+    background: #eceff1;
 }
 
 .contact-background {
-    background: url(../img/contact-test-5.png) no-repeat;
-    background-color: #e0e0e0;
+    background: url(../img/contact-test-6.png) no-repeat;
+    background-color: #dee2e4;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -47,9 +68,8 @@ hr{
 }
 
 .contact{
-    background: #0f9d58;
+    background: #6ab344;
     color: #fff;
-    /*margin: 10px;*/
     height: 52px;
     padding: 10px;
     width: 180px;
@@ -69,13 +89,12 @@ hr{
 }
 
 .contact:hover{
-    background: #1bdb7b;
+    background: #599439;
 }
 
 .pie{
     padding: 20px;
 }
-
 
   .mdl-layout__header-row {
     padding: 0 40px;
@@ -223,13 +242,11 @@ h4 {
 }
 
 .services-cadre {
-    margin-left: 20px;
-    margin-right: 20px;
-    border: 1px solid #e2e2e2;
+    border: 1px solid #f5f5f5;
     background: #fcfcfc;
-    width: 400px;
     height: 400px;
     padding: 12px !important;
+    min-width: 350px;
 }
 
 .services-img {
@@ -274,8 +291,19 @@ h4 {
     text-align: center !important; 
 }
 
+.footer-link:hover {
+    color: #599439;
+}
+
+@media screen and (min-width: 750px) {
+    .mdl-layout__header-row {
+        height: 50px;
+    }
+}
+
 @media screen and (max-width: 750px) {
-	table {
+
+    table {
 		overflow-x: auto;
 		display: block;
     }
@@ -334,10 +362,9 @@ h4 {
     }
 
     .services-cadre{
-        margin-left: 10px;
-        margin-right: 10px;
         width: 85%;
-        height: 500px;
+        min-width: 150px;
+        height: auto;
     }
 
     .mdl-mini-footer__left-section { 
