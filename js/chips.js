@@ -8,7 +8,6 @@
     };
     window['MaterialChipInput'] = MaterialChipInput;
 
-
     MaterialChipInput.prototype.Constant_ = {};
     MaterialChipInput.prototype.CssClasses_ = {};
 
@@ -130,7 +129,8 @@
             if(selected > -1) {
                 content = this.results_.children[selected].getAttribute('data-value');
             } else {
-                content = this.input_.value.replace(/[^0-9a-zäüö]/gi, '');
+                //ici pour changer les caractères acceptés dans les chips REGEX
+                content = this.input_.value.replace(/[0-9]/gi, '');
             }
             if(content) {
                 this.addChip_(content);

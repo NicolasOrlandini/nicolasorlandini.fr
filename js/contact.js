@@ -9,8 +9,8 @@ function ready(fn) {
 }
 
 ready(function() {
-    new window['MaterialChipInput'](document.getElementById('demo-0'));
-    new window['MaterialChipInput'](document.getElementById('demo-1'));
+    /*new window['MaterialChipInput'](document.getElementById('demo-0'));
+    new window['MaterialChipInput'](document.getElementById('demo-1'));*/
     var withSearch = new window['MaterialChipInput'](document.getElementById('demo-2'));
     withSearch.addSearch(function(query, callback) {
         var techno = ["Prout", "Cacahuète", "Macbook", "Emily Ratajkowski", "Clara Morgane", "Tchitchi"];

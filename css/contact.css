@@ -81,8 +81,8 @@ img.article-image {
 
 .demo-card-event > .mdl-card__actions {
     -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     box-sizing: border-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -116,3 +116,13 @@ img.article-image {
 .mdl-textfield--file .mdl-button--file {
   right: 0;
 }
+.mdl-textfield__label:after { background-color: #6ab344 !important; }
+.mdl-chipfield:after { background-color: #6ab344 !important; }
+
+.mdl-textfield--floating-label.is-focused .mdl-textfield__label,
+.mdl-textfield--floating-label.is-dirty .mdl-textfield__label,
+.mdl-textfield--floating-label.has-placeholder .mdl-textfield__label {
+    color: #6ab344 !important;
+}
+label.is-checked>.mdl-checkbox__box-outline { border-color: #6ab344 !important; }
+label.is-checked>span>.mdl-checkbox__tick-outline { background-color: #6ab344 !important; }

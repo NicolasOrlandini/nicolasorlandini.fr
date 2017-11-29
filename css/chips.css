@@ -3,18 +3,20 @@
     padding-bottom: 0;
     margin-bottom: 20px;
     border-bottom: 1px solid lightgrey; }
-.mdl-chipfield .inputs {
+.mdl-chipfield .inputs{
     margin-left: 5px;
     float: left;
-    position: relative; }
+    position: relative;
+}
+.inputs { margin-left: 0 !important; }
+.mdl-chipfield>.inputs { padding-top: 5px; }
 .mdl-chipfield .mdl-chip {
     float: left;
     margin-right: 5px; }
 .mdl-chipfield .mdl-textfield__input {
     height: 38px;
     border-bottom: none; }
-.mdl-chipfield .mdl-textfield__label {
-    top: 8px; }
+.mdl-chipfield { top: 8px; }
 .mdl-chipfield:after {
     background-color: #009688;
     bottom: -1px;
@@ -47,3 +49,7 @@
     padding: 10px 5px 10px 10px; }
 .mdl-chipfield .results li:hover, .mdl-chipfield .results li.is-selected {
     background-color: #eeeeee; }
+
+#demo-2{
+    padding: 0;
+}
