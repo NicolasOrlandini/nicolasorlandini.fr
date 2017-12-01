@@ -24,7 +24,7 @@
         var chip = document.createElement('span');
         chip.classList = 'mdl-chip mdl-chip--deletable';
         chip.innerHTML =
-            '<span class="mdl-chip__text">' + text + '</span>' +
+            '<span name="chips" class="mdl-chip__text">' + text + '</span>' +
             '<button type="button" class="mdl-chip__action">' +
             '<i class="material-icons">close</i></button>';
         var update = this.updateTarget_.bind(this);

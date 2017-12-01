@@ -1,11 +1,11 @@
 <?php
-/*require_once 'mail.php';*/
-require_once  'recaptcha.php';
+require_once 'mail.php';
+require_once 'recaptcha.php';
 $siteKey = '6LftGzgUAAAAAPIVLFDzuG0nL1e_054V-AltFU3T'; // votre clé publique
 $secret = '6LftGzgUAAAAANgO8xSCE1avLBgJQKUAJPzJjPzb'; // votre clé privée
 ?>
 <div class="mdl-grid portfolio-max-width portfolio-contact">
-    <form action="#" class="" method="POST">
+    <form action="" class="" method="POST">
         <?php /*require 'getCaptcha.php'; */?>
         <div class="container-civility">
             <label class="civility" for="">Civilité</label>
@@ -13,24 +13,24 @@ $secret = '6LftGzgUAAAAANgO8xSCE1avLBgJQKUAJPzJjPzb'; // votre clé privée
                 <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect radiobutton"
                        for = "monsieur">
                     <input type = "radio" id="monsieur" name="gender"
-                           class = "mdl-radio__button" value="monsieur">
+                           class = "mdl-radio__button" value="Mr">
                     <span class = "mdl-radio__label">Monsieur</span>
                 </label>
             </div>
             <div class="">
                 <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect radiobutton" for="madame">
-                    <input type="radio" id ="madame" name="gender" class="mdl-radio__button" value="madame" />
+                    <input type="radio" id ="madame" name="gender" class="mdl-radio__button" value="Mme" />
                     <span class="mdl-radio__label">Madame</span>
                 </label>
             </div>
         </div><br>
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <input class="mdl-textfield__input" name="nom" pattern="[A-Z,a-z, ]*" type="text" id="Name">
+            <input class="mdl-textfield__input" name="nom" pattern="[A-Z,a-z, ]*" type="text" id="nom">
             <label class="mdl-textfield__label" for="nom">Nom...</label>
             <span class="mdl-textfield__error">Letters and spaces only</span>
         </div>
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <input class="mdl-textfield__input" name="prenom" type="text" id="firstname">
+            <input class="mdl-textfield__input" name="prenom" type="text" id="prenom">
             <label class="mdl-textfield__label" for="prenom">Prénom...</label>
         </div>
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
@@ -38,14 +38,14 @@ $secret = '6LftGzgUAAAAANgO8xSCE1avLBgJQKUAJPzJjPzb'; // votre clé privée
             <label class="mdl-textfield__label" for="Email">Email...</label>
         </div>
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <input class="mdl-textfield__input" name="telephone" type="text" id="telephone">
+            <input class="mdl-textfield__input" name="telephone" type="tel" pattern="^\+?\s*(\d+\s?){8,}$" maxlength="10" id="telephone">
             <label class="mdl-textfield__label" for="telephone">Numéro de téléphone...</label>
         </div>
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label plateforme">
             <label for="plateforme">Plateforme de votre projet</label>
             <div>
                 <label class = "mdl-checkbox mdl-js-checkbox" for = "checkbox1">
-                    <input type="checkbox" name="android" id ="checkbox1" class="mdl-checkbox__input">
+                    <input type="checkbox" name="plateforme[]" value="android" id ="checkbox1" class="mdl-checkbox__input">
                     <i class="material-icons androidColor">android</i><span class = "mdl-checkbox__label">Android</span>
                 </label>
             </div>
@@ -53,7 +53,7 @@ $secret = '6LftGzgUAAAAANgO8xSCE1avLBgJQKUAJPzJjPzb'; // votre clé privée
             <div>
                 <label class = "mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"
                        for = "checkbox2">
-                    <input type="checkbox" name="ios" id = "checkbox2" class = "mdl-checkbox__input">
+                    <input type="checkbox" name="plateforme[]" value="ios" id = "checkbox2" class = "mdl-checkbox__input">
                     <i class="material-icons iosColor">phone_iphone</i><span class = "mdl-checkbox__label">iOS</span>
                 </label>
             </div>
@@ -83,7 +83,7 @@ $secret = '6LftGzgUAAAAANgO8xSCE1avLBgJQKUAJPzJjPzb'; // votre clé privée
             </div>
         </div>
         <!--<div class="g-recaptcha" data-sitekey="<?php /*echo $siteKey; */?>"></div><br>-->
-        <button class="mdl-button contact mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--white-colored" type="submit">
+        <button class="mdl-button contact mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--white-colored" name="submit" type="submit">
             ENVOYER
         </button>
     </form>

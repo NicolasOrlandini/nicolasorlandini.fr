@@ -2,17 +2,15 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-//Load composer's autoloader
 require 'vendor/autoload.php';
 if (isset($_POST["submit"])){
-    $mail = new PHPMailer(true);                              // Passing `true` enables exceptions
+    $mail = new PHPMailer();                              // Passing `true` enables exceptions
     try {
-        if (isset($_POST["sujet"]) && isset($_POST["nom"]) && isset($_POST["prenom"])
-            && isset($_POST["email"]) && isset($_POST["gender"])
-            && isset($_POST["company"])
-            && isset($_POST["telephone"]) && isset($_POST["message"])){
+        if (isset($_POST["sujet"]) && isset($_POST["nom"]) && isset($_POST["prenom"]) && isset($_POST["message"]) && isset($_POST["gender"])
+            && isset($_POST["demo-2"]) && isset($_POST["telephone"]) && !empty($_POST["plateforme"]) && isset($_POST["company"])
+        ){
 
-            $mail->SMTPDebug = 4;                                 // Enable verbose debug output
+            //$mail->SMTPDebug = 4;                                 // Enable verbose debug output
             $mail->Mailer = "smtp";                                 // Set mailer to use SMTP
             $mail->SMTPOptions = array(
                 'ssl' => array(
@@ -29,23 +27,34 @@ if (isset($_POST["submit"])){
             $mail->Port = 465;
 
             //Recipients
-            $mail->setFrom($_POST["email"], $_POST["nom"] . " " . $_POST["prenom"]);
-            $mail->addAddress('corp.no@gmail.com', "EMILY");     // Add a recipient
+            $mail->setFrom($_POST["email"],$_POST["gender"] . " " . strtoupper($_POST["nom"]) . " " . $_POST["prenom"]);
+            $mail->addAddress('valentin.leon0@gmail.com');     // Add a recipient
 
             //Attachments
-            $mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
-            $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name*/
+            //$mail->addAttachment($_POST["attachment"]);         // Add attachments
+            //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 
             //Content
             $mail->isHTML(true);                                  // Set email format to HTML
-            $mail->Subject = $_POST["sujet"];
-            $mail->Body    = $_POST["message"];
+            $mail->Subject = "Sujet: " . $_POST["sujet"];
+            $chips = $_POST["demo-2"];
+            $plateforme = "";
+            $message = "";
+            $telephone = $_POST["telephone"];
+            foreach ($_POST["plateforme"] as $plateformes) {
+                $plateforme .= $plateformes . "/";
+            }
+            $message .= "Explication du projet: " . $_POST["message"] . "\n"
+                . "Plateforme(s) choisie(s): " . rtrim($plateforme, '/') . "\n"
+                . "Les technologies à utiliser: " . $chips . "\n"
+                . "Coordonnées du contact: " . $telephone;
+            $mail->Body = str_replace("\n", "<br>", $message);
 
-            $mail->send();
-            echo 'Message has been sent';
+            if($mail->send()){
+                return;
+            }
         }
     } catch (Exception $e) {
-        echo 'Message could not be sent.'."<br>";
-        echo $mail->ErrorInfo;
+        echo "Le message n'a pas pu être envoyé." . "<br>";
     }
 }
