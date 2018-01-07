@@ -50,7 +50,7 @@ a {
 }
 
 .contact-background {
-    background: url(../img/contact-test-6.png) no-repeat;
+    background: url(../img/lightbulb.svg) no-repeat;
     background-color: #dee2e4;
     background-position: center;
     background-size: cover;
@@ -297,7 +297,7 @@ h4 {
 
 @media screen and (min-width: 750px) {
     .mdl-layout__header-row {
-        height: 50px;
+        height: 65px;
     }
 }
 

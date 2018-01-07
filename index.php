@@ -18,7 +18,7 @@
     <link rel='stylesheet prefetch' href='http:////netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css'>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
-    <link rel ="icon" type="image/png" href="images/favicon.png" >
+    <link rel ="icon" type="image/png" href="img/favicon.ico" >
     <link rel ="apple-touch-icon" href="images/apple-touch-icon.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
     <script src="./mdl/material.min.js"></script>
@@ -35,9 +35,9 @@
         <header class="site-header">
 
             <div class="mdl-layout__header-row mdl-layout--large-screen-only">
-                <h2 class="site-header__title">
-                    <span class="mdl-layout-title">Nicolas ORLANDINI</span>
-                </h2>
+                <span class="site-header__title">
+                    <img src="./img/logo_on.png" width="180px" alt="ON logo">
+                </span>
                 <div class="mdl-layout-spacer"></div>
                 <ul class="social-icons icon-circle icon-rotate list-unstyled list-inline">
                     <li>
@@ -75,7 +75,7 @@
             </div>
             <div class="mdl-layout__header-row mdl-layout--small-screen-only">
                 <div class="mdl-layout-spacer"></div>
-                <span class="mdl-layout-title">Nicolas ORLANDINI</span>
+                <img src="./img/logo_on.png" width="120px" alt="ON logo">
                 <div class="mdl-layout-spacer"></div>
             </div>
 
@@ -117,7 +117,7 @@
                         <span class="nom">ORLANDINI</span>
                     </h1>
                     <div class="title-cadre">
-                        <h1 class="title-activite">Développeur d'applications mobiles et web en Freelance</h1>
+                        <h2 class="title-activite">Développeur d'applications mobiles et web en Freelance</h2>
                         <p class="title-regime">Micro-Entrepreneur</p>
                     </div>
                     <form action="#contact">
@@ -128,15 +128,13 @@
                 </div>
             </div>
             <div class="background" id="serv">
-                <h2 class="subtitle">Mes services</h2>
+                <h3 class="subtitle">Mes services</h3>
+                <h3 class="subtitle">Plateformes</h3>
                 <div class="mdl-grid services-grid">
                     <div class="mdl-cell mdl-cell--3-col services-cadre">
                         <img class="services-img" src="./img/android_logo_2.png" width="70px" alt="Android logo">
                         <p class="services-text">Développement Android</p>
-                        <p>Développement d'application mobile Android (JAVA)</p>
-                        <p>Ajout de fonctionnalités sur une application existante</p>
-                        <p>Mise à jour fonctionnelle</p>
-                        <p>Mise à jour graphique</p>
+                        <p class="justify">Développement d'application pour smartphones et tablettes Android (JAVA)</p>
                     </div>
                     <div class="mdl-cell mdl-cell--3-col services-cadre">
                         <img class="services-img" src="./img/Apple_Computer_Logo_rainbow.png" width="70px" alt="Apple logo">
@@ -154,9 +152,44 @@
                         <p>Interface d'administation</p>
                     </div>
                 </div>
+
+                <h3 class="subtitle">Des applications sur-mesure</h3>
+                <p>Grâce a mon expertise nous pouvons ensemble aboutir a la meilleure solution.</p>
+                <div class="mdl-grid services-grid">
+                    <div class="mdl-cell mdl-cell--4-col services-cadre">
+                        <p class="services-text">Idée originale d'application</p>
+                        <p class="justify">Vous êtes un professionnel, un entrepreuneur ? Vous avez une idée originale d'application ? 
+                        Que vous ayez déjà rédigé un cahier des charges ou non, nous pouvons ensemble réfléchir au meilleur 
+                        moyen de concretiser votre idée.</p>
+                    </div>
+                    <div class="mdl-cell mdl-cell--4-col services-cadre">
+                       <p class="services-text">Répondre à un besoin spécifique lié a votre activité</p>
+                        <p class="justify">Vous avez besoin d'une application accéssible rapidement sur des terminaux mobiles 
+                        pour vous aider au quotidien dans votre activité ? Nous pouvons ensemble réfléchir au 
+                        meilleur moyen de concretiser cette idée.</p>
+                    </div>
+                </div>
+                <h3 class="subtitle">Une nouvelle vie pour vos applications</h3>
+                <div class="mdl-grid services-grid">
+                    <div class="mdl-cell mdl-cell--4-col services-cadre">
+                        <p class="services-text">Refonte graphique</p>
+                        <p class="justify">Vous disposez d'une application, cette dernière n'est plus assez moderne face aux 
+                        constantes évolutions du merché du mobile ? Je peux vous aider ! En réalisant une 
+                        nouvelle interface plus moderne est convivale avec vous, votre application gagnera en 
+                        notoriété et attirera de nouveaux clients.</p>
+                    </div>
+                    <div class="mdl-cell mdl-cell--4-col services-cadre">
+                        <p class="services-text">Ajout de nouvelles fonctionnalités</p>
+                        <p class="justify">Vous disposez d'une application, vous envisagez d'ajouter une ou des nouvelles 
+                        fonctionnalités pour répondre à un nouveau besoin ou gagner une nouvelle clientèle ? 
+                        Je peux réaliser un diagnostique de votre application afin de permettre l'ajout 
+                        d'éventuelles fonctionnalités ainsi que l'optimisation de votre application.</p>
+                    </div>
+                    </div>
+                </div>
             </div>
             <div class="background background-dark-dark" id="pres">
-                <h2 class="subtitle">Présentation</h2>
+                <h3 class="subtitle">Présentation</h3>
                 <div class="mdl-grid">
                     <div class="mdl-cell mdl-cell--4-col">
                         <i class="material-icons">call</i>
@@ -202,7 +235,7 @@
                 </div>
             </div>
             <div class="background background-dark" id="comp">
-                <h2 class="subtitle">Mes compétences</h2>
+                <h3 class="subtitle">Mes compétences</h3>
 
                 <ul class="list-unstyled list-inline">
                     <li>
@@ -228,7 +261,8 @@
                 </ul>
             </div>
             <div class="background contact-background" id="contact">
-                <h2 class="subtitle">Me contacter</h2>
+                <h3 class="subtitle">Me contacter</h3>
+                
                     <?php include_once 'contact.php'; ?>
             </div>
     </main>
@@ -237,7 +271,7 @@
     <div class="mdl-mega-footer__middle-section divUp">
         <div class="mdl-mega-footer__drop-down-section">
             <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-            <h1 class="mdl-mega-footer__heading">Mes informations</h1>
+            <h3 class="mdl-mega-footer__heading">Mes informations</h3>
             <ul class="mdl-mega-footer__link-list">
                 <li>
                     <a class="footer-link" href="#pres">Présentation</a>
@@ -253,14 +287,14 @@
 
         <div class="mdl-mega-footer__drop-down-section">
             <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-            <h1 class="mdl-mega-footer__heading">Projets réalisés</h1>
+            <h3 class="mdl-mega-footer__heading">Projets réalisés</h3>
             <ul class="mdl-mega-footer__link-list">
             </ul>
         </div>
 
         <div class="mdl-mega-footer__drop-down-section">
             <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-            <h1 class="mdl-mega-footer__heading">Me contacter</h1>
+            <h3 class="mdl-mega-footer__heading">Me contacter</h3>
             <ul class="mdl-mega-footer__link-list">
                 <li>
                     <a class="footer-link" href="#contact">Contact</a>
@@ -275,7 +309,7 @@
         </div>
         <div class="mdl-mega-footer__drop-down-section">
         <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-        <h1 class="mdl-mega-footer__heading">Mes réseaux</h1>
+        <h3 class="mdl-mega-footer__heading">Mes réseaux</h3>
         <ul class="mdl-mega-footer__link-list">
             <ul class="social-icons icon-circle icon-rotate list-unstyled list-inline">
                 <li>
@@ -306,14 +340,14 @@
     <div class="mdl-mini-footer divDown">
         <div class="mdl-mini-footer__left-section">
             <div class="mdl-logo">© Nicolas ORLANDINI</div>
-            <p>Tous droits réservés - 2017</p>
+            <p>Tous droits réservés - 2017-2018</p>
         </div>
-        <div class="mdl-mini-footer__right-section">
+        <!--<div class="mdl-mini-footer__right-section">
             <div class="mdl-mega-footer__link-list">
                 <a href="#">Mentions légales</a> -
                 <a href="#">Conditions générales de vente</a>
             </div>
-        </div>
+        </div>-->
     </div>
 </footer>
 
