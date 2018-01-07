@@ -1,3 +1,8 @@
+<?php
+require_once ("compteVisite.php");
+
+compterVisite();
+?>
 <!DOCTYPE html>
 <html lang="fr">
 
