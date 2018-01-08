@@ -159,17 +159,17 @@ compterVisite();
                 </div>
 
                 <h3 class="subtitle">Des applications sur-mesure</h3>
-                <p>Grâce a mon expertise nous pouvons ensemble aboutir a la meilleure solution.</p>
+                <p>Grâce à mon expertise nous pouvons ensemble aboutir à la meilleure solution.</p>
                 <div class="mdl-grid services-grid">
                     <div class="mdl-cell mdl-cell--4-col services-cadre">
                         <p class="services-text">Idée originale d'application</p>
-                        <p class="justify">Vous êtes un professionnel, un entrepreuneur ? Vous avez une idée originale d'application ? 
+                        <p class="justify">Vous êtes un professionnel, un entrepreneur ? Vous avez une idée originale d'application ? 
                         Que vous ayez déjà rédigé un cahier des charges ou non, nous pouvons ensemble réfléchir au meilleur 
                         moyen de concretiser votre idée.</p>
                     </div>
                     <div class="mdl-cell mdl-cell--4-col services-cadre">
                        <p class="services-text">Répondre à un besoin spécifique lié a votre activité</p>
-                        <p class="justify">Vous avez besoin d'une application accéssible rapidement sur des terminaux mobiles 
+                        <p class="justify">Vous avez besoin d'une application accessible rapidement sur des terminaux mobiles 
                         pour vous aider au quotidien dans votre activité ? Nous pouvons ensemble réfléchir au 
                         meilleur moyen de concretiser cette idée.</p>
                     </div>
@@ -179,8 +179,8 @@ compterVisite();
                     <div class="mdl-cell mdl-cell--4-col services-cadre">
                         <p class="services-text">Refonte graphique</p>
                         <p class="justify">Vous disposez d'une application, cette dernière n'est plus assez moderne face aux 
-                        constantes évolutions du merché du mobile ? Je peux vous aider ! En réalisant une 
-                        nouvelle interface plus moderne est convivale avec vous, votre application gagnera en 
+                        constantes évolutions du marché du mobile ? Je peux vous aider ! En réalisant une 
+                        nouvelle interface plus moderne est conviviale avec vous, votre application gagnera en 
                         notoriété et attirera de nouveaux clients.</p>
                     </div>
                     <div class="mdl-cell mdl-cell--4-col services-cadre">
