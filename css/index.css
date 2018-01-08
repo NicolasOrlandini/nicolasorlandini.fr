@@ -5,6 +5,14 @@ body{
     text-rendering: optimizeLegibility;
 }
 
+.Back-to-top {
+    position: fixed;
+    bottom: 4%;
+    right: 2%;
+    background: #6ab344 !important;
+    color: white !important;
+}
+
 .prenom{
     font-size: 85px;
     font-weight: 300;
@@ -112,6 +120,8 @@ hr{
     position: relative;
     text-align: center;
     padding: 40px;
+    min-height: 100%;
+    background-position: center;
   }
   
   .page-title::before {
@@ -134,7 +144,7 @@ hr{
   .content {
     position: relative;
     z-index: 10;
-    padding-top: 50px;
+    padding-top: 60px;
     padding-bottom: 90px;
   }
   
@@ -230,9 +240,21 @@ tr td {
 }
 
 h4 {
+    font-size: 25px;
+    margin-bottom: 10px !important;
+    margin-top: 10px;
+}
+
+h5 {
     margin-top: -10px;
 }
 
+.plateforme-cadre {
+    margin : 28px;
+    padding: 10px;
+    background-color: #eceff1;
+    text-align: center;
+}
 
 .services-text {
     font-size: 1.2em;
@@ -247,10 +269,14 @@ h4 {
     height: 400px;
     padding: 12px !important;
     min-width: 350px;
+    margin: 2em auto 2em;
+    padding: 3em 0;
+    text-align: center;
 }
 
 .services-img {
-    margin-top: 30px;
+    margin-top: 2px;
+    width: 50px;
 }
 
 .pres-infos {
@@ -361,10 +387,26 @@ h4 {
         margin: 5px;
     }
 
+    .plateforme-cadre {
+        margin : 20px;
+        padding: 8px;
+        text-align: center;
+        height: auto;
+    }
+
     .services-cadre{
         width: 85%;
         min-width: 150px;
         height: auto;
+    }
+
+    .services-text {
+        font-size: 1.1em;
+        margin: 5px;
+    }
+
+    .services-img {
+        width: 40px;
     }
 
     .mdl-mini-footer__left-section { 
