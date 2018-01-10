@@ -83,7 +83,7 @@ $secret = '6LftGzgUAAAAANgO8xSCE1avLBgJQKUAJPzJjPzb'; // votre clé privée
             </div>
         </div>
         <!--<div class="g-recaptcha" data-sitekey="<?php /*echo $siteKey; */?>"></div><br>-->
-        <button class="mdl-button contact mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--white-colored" name="submit" type="submit">
+        <button class="mdl-button contact mdl-js-button mdl-button--raised mdl-js-ripple-effect contact-send" name="submit" type="submit">
             ENVOYER
         </button>
     </form>

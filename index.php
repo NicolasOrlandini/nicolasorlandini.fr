@@ -7,11 +7,27 @@ compterVisite();*/
 <html lang="fr">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112276851-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-112276851-1');
+    </script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-55C6TGX');</script>
+    <!-- End Google Tag Manager -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Vous avez une idée de projet d'application mobile Android ou Windows 10 Mobile ? Vous êtes sur Nice ? Alors je peux vous aider !">
-    <meta name="keywords" content="Android, freelance, UWP, mobile, Nice, Développement mobile, Nicolas Orlandini, Orlandini, développeur mobile Nice, développeur android Nice" />
+    <meta name="keywords" content="Android, freelance, UWP, mobile, Nice, Développement mobile, Nicolas Orlandini, Orlandini, développeur mobile Nice, développeur android Nice, création application android" />
     <meta name="author" content="Nicolas Orlandini">
     <meta name="copyright" content="© Nicolas Orlandini - 2017" />   
     <link rel="stylesheet" href="./mdl/material.min.css">
@@ -23,8 +39,8 @@ compterVisite();*/
     <link rel='stylesheet prefetch' href='http:////netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css'>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
-    <link rel ="icon" type="image/png" href="img/logo_beta-test.svg" >
-    <link rel ="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel ="icon" type="image/png" href="favicon.ico" >
+    <link rel ="apple-touch-icon" href="favicon.ico">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
     <script src="./mdl/material.min.js"></script>
     <script src="./js/chart/Chart.js"></script>
@@ -32,12 +48,16 @@ compterVisite();*/
     <script src="./js/contact.js"></script>
     <script src="./js/chips.js"></script>
 
-    <title>Nicolas Orlandini | Développeur d'applications mobiles Android, UWP et web en Freelance | Nice</title>
+    <title>Nicolas Orlandini | Création d'applications mobiles Android, UWP et web en Freelance | Nice</title>
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-55C6TGX"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <a href="javascript:" id="return-to-top">
-        <button class="mdl-button mdl-js-button mdl-button--fab Back-to-top">
+        <button class="mdl-button mdl-js-button mdl-button--fab Back-to-top btn-orange">
             <i class="material-icons">keyboard_arrow_up</i>
         </button>
     </a>
@@ -126,11 +146,10 @@ compterVisite();*/
                         <span class="nom">ORLANDINI</span>
                     </h1>
                     <div class="title-cadre">
-                        <h2 class="title-activite">Développeur d'applications mobiles et web en Freelance</h2>
-                        <p class="title-regime">Micro-Entrepreneur</p>
+                        <h2 class="title-activite">Création d'applications mobiles et web en Freelance</h2>
                     </div>
                     <form action="#contact">
-                        <button class="mdl-button contact mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--white-colored" type="submit">
+                        <button class="mdl-button contact mdl-js-button mdl-button--raised mdl-js-ripple-effect btn-orange" type="submit">
                             Me contacter
                         </button>
                     </form>
@@ -139,64 +158,70 @@ compterVisite();*/
             <div class="background" id="serv">
                 <h3 class="subtitle">Mes services</h3>
                 <div class="mdl-grid">
-                <div class="mdl-cell mdl-cell--4-col">
-                    <h3 class="subtitle">Des applications sur-mesure</h3>
-                    <img  src="./img/sur_mesure.svg"  alt="sur mesure" width="200px" />
-                    <p>Grâce à mon expertise nous pouvons ensemble aboutir à la meilleure solution.</p>
-                 </div>
-                <div class="mdl-cell mdl-cell--6-col">
-                    <div class="mdl-grid">
-                        <div class="mdl-cell mdl-cell--4-col services-cadre">
-                            <p class="services-text">Idée originale d'application</p>
-                            <p class="justify">Vous êtes un professionnel, un entrepreneur ? Vous avez une idée originale d'application ? 
-                            Que vous ayez déjà rédigé un cahier des charges ou non, nous pouvons ensemble réfléchir au meilleur 
-                            moyen de concretiser votre idée.</p>
-                        </div>
-                        <div class="mdl-cell mdl-cell--4-col services-cadre">
-                        <p class="services-text">Répondre à un besoin spécifique lié a votre activité</p>
-                            <p class="justify">Vous avez besoin d'une application accessible rapidement sur des terminaux mobiles 
-                            pour vous aider au quotidien dans votre activité ? Nous pouvons ensemble réfléchir au 
-                            meilleur moyen de concretiser cette idée.</p>
+                    <div class="mdl-cell mdl-cell--4-col">
+                        <h3 class="subtitle">Des applications sur-mesure</h3>
+                        <img class="services-sur-mesure-title-img"  src="./img/sur_mesure.svg"  alt="sur mesure" />
+                        <p>Grâce à mon expertise nous pouvons ensemble aboutir à la meilleure solution selon vos besoins.</p>
+                    </div>
+                    <div class="mdl-cell mdl-cell--8-col background-dark-dark">
+                        <div class="mdl-grid">
+                            <div class="mdl-cell mdl-cell--4-col services-sur-mesure-cadre">
+                                <p class="services-text">Idée originale d'application</p>
+                                <p class="justify">Vous êtes un professionnel, un entrepreneur ? Vous avez une idée originale d'application ? 
+                                Que vous ayez déjà rédigé un cahier des charges ou non, nous pouvons ensemble réfléchir au meilleur 
+                                moyen de concretiser votre idée.</p>
+                            </div>
+                            <div class="mdl-cell mdl-cell--4-col services-sur-mesure-cadre">
+                            <p class="services-text">Répondre à un besoin spécifique lié a votre activité</p>
+                                <p class="justify">Vous avez besoin d'une application accessible rapidement sur des terminaux mobiles 
+                                pour vous aider au quotidien dans votre activité ? Nous pouvons ensemble réfléchir au 
+                                meilleur moyen de concretiser cette idée.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                    <h3 class="subtitle">Une nouvelle vie pour vos applications</h3>
-                    <div class="mdl-grid">
-                        <div class="mdl-cell mdl-cell--4-col services-cadre">
-                            <p class="services-text">Refonte graphique</p>
-                            <p class="justify">Vous disposez d'une application, cette dernière n'est plus assez moderne face aux 
-                            constantes évolutions du marché du mobile ? Je peux vous aider ! En réalisant une 
-                            nouvelle interface plus moderne est conviviale avec vous, votre application gagnera en 
-                            notoriété et attirera de nouveaux clients.</p>
+                <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--8-col background-dark-dark">
+                        <div class="mdl-grid">
+                            <div class="mdl-cell mdl-cell--4-col services-sur-mesure-cadre">
+                                <p class="services-text">Refonte graphique</p>
+                                <p class="justify">Vous disposez d'une application, cette dernière n'est plus assez moderne face aux 
+                                constantes évolutions du marché du mobile ? Je peux vous aider ! En réalisant une 
+                                nouvelle interface plus moderne est conviviale avec vous, votre application gagnera en 
+                                notoriété et attirera de nouveaux clients.</p>
+                            </div>
+                            <div class="mdl-cell mdl-cell--4-col services-sur-mesure-cadre">
+                                <p class="services-text">Ajout de nouvelles fonctionnalités</p>
+                                <p class="justify">Vous disposez d'une application, vous envisagez d'ajouter une ou des nouvelles 
+                                fonctionnalités pour répondre à un nouveau besoin ou gagner une nouvelle clientèle ? 
+                                Je peux réaliser un diagnostique de votre application afin de permettre l'ajout 
+                                d'éventuelles fonctionnalités ainsi que l'optimisation de votre application.</p>
+                            </div>
+                            </div>
                         </div>
-                        <div class="mdl-cell mdl-cell--4-col services-cadre">
-                            <p class="services-text">Ajout de nouvelles fonctionnalités</p>
-                            <p class="justify">Vous disposez d'une application, vous envisagez d'ajouter une ou des nouvelles 
-                            fonctionnalités pour répondre à un nouveau besoin ou gagner une nouvelle clientèle ? 
-                            Je peux réaliser un diagnostique de votre application afin de permettre l'ajout 
-                            d'éventuelles fonctionnalités ainsi que l'optimisation de votre application.</p>
-                        </div>
-                        </div>
+                        <div class="mdl-cell mdl-cell--4-col">
+                            <h3 class="subtitle">Une nouvelle vie pour vos applications</h3>
+                        </div>  
                     </div>
-
+                </div>
                 <div class="plateforme-cadre">
                     <h4>Plateformes</h4>
                     <div class="mdl-grid">
-                        <div class="mdl-cell mdl-cell--3-col">
+                        <div class="mdl-cell mdl-cell--3-col services-plateformes-cadre">
                             <img class="services-img" src="./img/android_logo_2.png" alt="Android logo">
                             <p class="services-text">Android</p>
                             <p>Compatible smartphones et tablettes Android (JAVA)</p>
                         </div>
-                        <div class="mdl-cell mdl-cell--3-col">
+                        <div class="mdl-cell mdl-cell--3-col services-plateformes-cadre">
                             <img class="services-img" src="./img/Apple_Computer_Logo_rainbow.png" alt="Apple logo">
                             <p class="services-text">iOS</p>
                         </div>
-                        <div class="mdl-cell mdl-cell--3-col">
+                        <div class="mdl-cell mdl-cell--3-col services-plateformes-cadre">
                             <img class="services-img" src="./img/windows_logo.png" alt="C# logo">
                             <p class="services-text">UNIVERSAL WINDOWS PLATFORM</p>
                             <p>Compatible Windows 10 Mobile et Windows 10 PC et Tablettes</p>
                         </div>
-                        <div class="mdl-cell mdl-cell--3-col">
+                        <div class="mdl-cell mdl-cell--3-col services-plateformes-cadre">
                             <img class="services-img" src="./img/" alt="outils logo">
                             <p class="services-text">Outils associés aux applications</p>
                             <p>API REST JAVA</p>
@@ -221,7 +246,7 @@ compterVisite();*/
                     <div class="mdl-cell mdl-cell--4-col">
                         <i class="material-icons">mail_outline</i>
                         <p class="pres-infos">
-                            <a class="bio-link" href="mailto:nicolas.orlandini@outlook.fr">nicolas.orlandini@outlook.fr</a>
+                            <a class="bio-link" href="mailto:contact@orlandini.fr">contact@orlandini.fr</a>
                         </p>
                     </div>
                 </div>
@@ -244,7 +269,7 @@ compterVisite();*/
                         <br>
                         <br>
                         <a href="./fichiers" download="CV_Orlandini_Nicolas.pdf">
-                            <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+                            <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect btn-orange">
                                 <i class="material-icons">file_download</i>
                             </button>
                         </a>
@@ -318,7 +343,7 @@ compterVisite();*/
                         <a class="footer-link" href="#contact">Contact</a>
                     </li>
                     <li>
-                        <a class="footer-link" href="mailto:nicolas.orlandini@outlook.fr">nicolas.orlandini@outlook.fr</a>
+                        <a class="footer-link" href="mailto:contact@orlandini.fr"> contact@orlandini.fr</a>
                     </li>
                     <li>
                         <a class="footer-link" href="tel:0620703004">06 20 70 30 04</a>
@@ -357,15 +382,16 @@ compterVisite();*/
         </div>
         <div class="mdl-mini-footer divDown">
             <div class="mdl-mini-footer__left-section">
-                <div class="mdl-logo">© Nicolas ORLANDINI</div>
+                <p class="mdl-logo">© Nicolas ORLANDINI</p>
+                <br><br>
                 <p>Tous droits réservés - 2017-2018</p>
             </div>
-            <!--<div class="mdl-mini-footer__right-section">
+            <div class="mdl-mini-footer__right-section">
                 <div class="mdl-mega-footer__link-list">
-                    <a href="#">Mentions légales</a> -
-                    <a href="#">Conditions générales de vente</a>
+                <!--    <a href="#">Mentions légales</a> -
+                    <a href="#">Conditions générales de vente</a>-->
                 </div>
-            </div>-->
+            </div>
         </div>
     </footer>
 
@@ -384,6 +410,7 @@ compterVisite();*/
             }, 500)
         });
     </script>
-</body>
 
+    
+</body>
 </html>

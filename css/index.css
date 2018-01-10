@@ -9,8 +9,6 @@ body{
     position: fixed;
     bottom: 4%;
     right: 2%;
-    background: #6ab344 !important;
-    color: white !important;
 }
 
 .prenom{
@@ -18,12 +16,21 @@ body{
     font-weight: 300;
 }
 
+.btn-orange {
+    background: #FF7E00 !important;
+    color: white !important;
+}
+
+.btn-orange:hover {
+    background: #B25800 !important;
+}
+
 .nom{
     font-size: 90px;
     font-weight: 280;
 }
 a {
-    color: #4b7d2f;
+    color: #00C5FF;
     text-decoration: none;
 }
 
@@ -32,16 +39,8 @@ a {
 }
 
 .bio-link:hover {
-    color: #4b7d2f;
+    color: #19CBFF;
     text-decoration: underline;
-}
-
-.mdl-button--fab.mdl-button--colored {
-    background: #6ab344;
-}
-
-.mdl-button--fab.mdl-button--colored:hover {
-    background: #4b7d2f;
 }
 
 .background{
@@ -76,8 +75,6 @@ hr{
 }
 
 .contact{
-    background: #6ab344;
-    color: #fff;
     height: 52px;
     padding: 10px;
     width: 180px;
@@ -96,8 +93,13 @@ hr{
     text-align: center;
 }
 
-.contact:hover{
-    background: #599439;
+.contact-send{
+    background: #00C5FF;
+    color: #fff;
+}
+
+.contact-send:hover{
+    background: #008AB2;
 }
 
 .pie{
@@ -274,6 +276,27 @@ h5 {
     text-align: center;
 }
 
+.services-sur-mesure-cadre {
+    height: auto;
+    padding: 12px !important;
+    margin: 2em auto 2em;
+    padding: 3em 0;
+    text-align: center;
+}
+
+.services-sur-mesure-title-img {
+    width: 200px;
+}
+
+.services-plateformes-cadre {
+    height: auto;
+    padding: 5px !important;
+    min-width: 200px;
+    margin: 2em auto 2em;
+    padding: 2em 0;
+    text-align: center;
+}
+
 .services-img {
     margin-top: 2px;
     width: 50px;
@@ -395,7 +418,7 @@ h5 {
     }
 
     .services-cadre{
-        width: 85%;
+        width: 90%;
         min-width: 150px;
         height: auto;
     }
@@ -407,6 +430,10 @@ h5 {
 
     .services-img {
         width: 40px;
+    }
+
+    .services-sur-mesure-title-img {
+        width: 90px;
     }
 
     .mdl-mini-footer__left-section { 
