@@ -1,10 +1,5 @@
-<?php
-/*require_once ("compteVisite.php");
-
-compterVisite();*/
-?>
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" xmlns="http://www.w3.org/1999/html">
 
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -307,7 +302,7 @@ compterVisite();*/
                 
                     <?php include_once 'contact.php'; ?>
             </div>
-        </div>
+        </div
     </main>
 
     <footer class="mdl-mega-footer customFooter">
@@ -351,8 +346,10 @@ compterVisite();*/
                 </ul>
             </div>
             <div class="mdl-mega-footer__drop-down-section">
-            <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-            <h3 class="mdl-mega-footer__heading">Mes réseaux</h3>
+                <label>
+                    <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                </label>
+                <h3 class="mdl-mega-footer__heading">Mes réseaux</h3>
             <ul class="mdl-mega-footer__link-list">
                 <ul class="social-icons icon-circle icon-rotate list-unstyled list-inline">
                     <li>
