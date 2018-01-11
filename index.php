@@ -4,7 +4,7 @@
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112276851-1"></script>
-    <script>
+    <script  async>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
@@ -24,7 +24,7 @@
     <meta name="description" content="Vous avez une idée de projet d'application mobile Android ou Windows 10 Mobile ? Vous êtes sur Nice ? Alors je peux vous aider !">
     <meta name="keywords" content="Android, freelance, UWP, mobile, Nice, Développement mobile, Nicolas Orlandini, Orlandini, développeur mobile Nice, développeur android Nice, création application android" />
     <meta name="author" content="Nicolas Orlandini">
-    <meta name="copyright" content="© Nicolas Orlandini - 2017" />   
+    <meta name="copyright" content="© Nicolas Orlandini - 2017-2018" />   
     <link rel="stylesheet" href="./mdl/material.min.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/social.css">
@@ -36,12 +36,12 @@
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
     <link rel ="icon" type="image/png" href="favicon.ico" >
     <link rel ="apple-touch-icon" href="favicon.ico">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
-    <script src="./mdl/material.min.js"></script>
-    <script src="./js/chart/Chart.js"></script>
-    <script src="./js/index.js"></script>
-    <script src="./js/contact.js"></script>
-    <script src="./js/chips.js"></script>
+    <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+    <script async src="./mdl/material.min.js"></script>
+    <script async src="./js/chart/Chart.js"></script>
+    <script async src="./js/index.js"></script>
+    <script async src="./js/contact.js"></script>
+    <script async src="./js/chips.js"></script>
 
     <title>Nicolas Orlandini | Création d'applications mobiles Android, UWP et web en Freelance | Nice</title>
 </head>
@@ -151,10 +151,10 @@
                 </div>
             </div>
             <div class="background" id="serv">
-                <h3 class="subtitle">Mes services</h3>
+                <h3 class="sub subtitle">Mes services</h3>
                 <div class="mdl-grid">
                     <div class="mdl-cell mdl-cell--4-col">
-                        <h3 class="subtitle">Des applications sur-mesure</h3>
+                        <h3 class="sub services-title">Des applications sur-mesure</h3>
                         <img class="services-sur-mesure-title-img"  src="./img/sur_mesure.svg"  alt="sur mesure" />
                         <p>Grâce à mon expertise nous pouvons ensemble aboutir à la meilleure solution selon vos besoins.</p>
                     </div>
@@ -195,7 +195,7 @@
                             </div>
                         </div>
                         <div class="mdl-cell mdl-cell--4-col">
-                            <h3 class="subtitle">Une nouvelle vie pour vos applications</h3>
+                            <h3 class="sub services-title">Une nouvelle vie pour vos applications</h3>
                         </div>  
                     </div>
                 </div>
@@ -226,7 +226,7 @@
                 </div>
             </div>
             <div class="background background-dark-dark" id="pres">
-                <h3 class="subtitle">Présentation</h3>
+                <h3 class="sub subtitle">Présentation</h3>
                 <div class="mdl-grid">
                     <div class="mdl-cell mdl-cell--4-col">
                         <i class="material-icons">call</i>
@@ -272,33 +272,33 @@
                 </div>
             </div>
             <div class="background background-dark" id="comp">
-                <h3 class="subtitle">Mes compétences</h3>
+                <h3 class="sub subtitle">Mes compétences</h3>
 
                 <ul class="list-unstyled list-inline">
                     <li>
-                        <canvas id="pieChartAndroid" class="pie"></canvas>
+                        <canvas id="pieChartAndroid" class="comp-pie"></canvas>
                         <h5>Android</h5>
                     </li>
                     <li>
-                        <canvas id="pieChartiOS" class="pie"></canvas>
+                        <canvas id="pieChartiOS" class="comp-pie"></canvas>
                         <h5>Swift</h5>
                     </li>
                     <li>
-                        <canvas id="pieChartCSharp" class="pie"></canvas>
+                        <canvas id="pieChartCSharp" class="comp-pie"></canvas>
                         <h5>C# / UWP</h5>
                     </li>
                     <li>
-                        <canvas id="pieChartJava" class="pie"></canvas>
+                        <canvas id="pieChartJava" class="comp-pie"></canvas>
                         <h5>JAVA</h5>
                     </li>
                     <li>
-                        <canvas id="pieChartHtmlCss" class="pie"></canvas>
+                        <canvas id="pieChartHtmlCss" class="comp-pie"></canvas>
                         <h5>HTML5 / CSS3</h5>
                     </li>
                 </ul>
             </div>
             <div class="background contact-background" id="contact">
-                <h3 class="subtitle">Me contacter</h3>
+                <h3 class="sub subtitle">Me contacter</h3>
                 
                     <?php include_once 'contact.php'; ?>
             </div>
@@ -346,43 +346,47 @@
                 </ul>
             </div>
             <div class="mdl-mega-footer__drop-down-section">
-                <label>
-                    <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-                </label>
+                <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
                 <h3 class="mdl-mega-footer__heading">Mes réseaux</h3>
-            <ul class="mdl-mega-footer__link-list">
-                <ul class="social-icons icon-circle icon-rotate list-unstyled list-inline">
-                    <li>
-                        <a href="https://github.com/NicolasOrlandini">
-                            <i class="fa fa-github"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/nicolas-orlandini-1b3871129/">
-                            <i class="fa fa-linkedin"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-google-plus"></i>
-                        </a>
-                    </li>
+                <ul class="mdl-mega-footer__link-list">
+                    <ul class="social-icons icon-circle icon-rotate list-unstyled list-inline">
+                        <li>
+                            <a href="https://github.com/NicolasOrlandini">
+                                <i class="fa fa-github"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/nicolas-orlandini-1b3871129/">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                        </li>
 
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-skype"></i>
-                        </a>
-                    </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-skype"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </ul>
-            </ul>
-        </div>
+            </div>
         </div>
         <div class="mdl-mini-footer divDown">
-            <div class="mdl-mini-footer__left-section">
-                <p class="mdl-logo">© Nicolas ORLANDINI</p>
-                <br><br>
-                <p>Tous droits réservés - 2017-2018</p>
-            </div>
+            <ul class="list-unstyled">
+                <div>
+                    <img class="footer-logo" alt="ON-logo" src="./img/logo_beta-test.png"/>
+                </div>
+                <li>
+                    <p class="mdl-logo">© Nicolas ORLANDINI</p>
+                </li>
+                <li>
+                    <p>Tous droits réservés - 2017-2018</p>
+                </li>
+            </ul>
             <div class="mdl-mini-footer__right-section">
                 <div class="mdl-mega-footer__link-list">
                 <!--    <a href="#">Mentions légales</a> -
@@ -407,7 +411,5 @@
             }, 500)
         });
     </script>
-
-    
 </body>
 </html>

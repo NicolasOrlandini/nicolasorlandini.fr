@@ -62,27 +62,27 @@ h5 {
     background: #fff;
     color: #757575;
     box-shadow: 0 1px 6px rgba(0,0,0,0.35);
-    left: 0;
     position: fixed;
-    top: 0;
     width: 100%;
     z-index: 100;
 }
 
-.pie{
-    margin: 0 auto;
-    width: 104px;
-    height: 52px;
-    padding: 20px;
-}
-
-.subtitle{
-    font-family: "Roboto","Helvetica","Arial",sans-serif;
-    color: #757575;
-    font-size: 50px;
+.sub{
     margin-bottom: 40px;
     margin-top: 20px;
-    font-weight: 400;
+    color: rgb(55,71,79);
+    font-family: Roboto;
+    font-weight: 300;
+    line-height: 48px;
+}
+.subtitle{
+    font-size: 50px;
+}
+
+.services-title{
+    font-size: 36px;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
 /************************** MENU **************************/
@@ -250,6 +250,15 @@ nav>a{
     text-align: center;
 }
 
+/************************** COMPETENCES **************************/
+
+.comp-pie{
+    margin: 0 auto;
+    width: 104px;
+    height: 52px;
+    padding: 20px;
+}
+
 /************************** CONTACT **************************/
 
 .contact-background {
@@ -296,7 +305,9 @@ nav>a{
 /************************** FOOTER **************************/
 
 .customFooter { 
-    padding: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+    padding-right: 0;
 }
 
 .mdl-mega-footer__drop-down-section { 
@@ -304,7 +315,8 @@ nav>a{
 }
 
 .mdl-mini-footer__left-section { 
-    margin-left: 10px !important; 
+    margin-left: 10px !important;
+    text-align: center !important;
 }
 
 .mdl-mini-footer__right-section { 
@@ -328,10 +340,19 @@ nav>a{
     background: #363636;
     padding: 0;
     width: 100%; 
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    align-items: center;    
+}
+
+.footer-logo{
+    width: 55px;
+    padding: 10px;
+    margin: 0  auto;
 }
 
 /************************** MEDIA QUERIES **************************/
-
 
 @media screen and (min-width: 750px) {
     .mdl-layout__header-row {
@@ -363,6 +384,12 @@ nav>a{
         margin-top: 5px;
     }
 
+    h5 {
+        margin-top: -5px;
+    }
+    
+    /************************** TITLE **************************/
+
     .title-background {
         padding: 10px;
     }
@@ -392,6 +419,8 @@ nav>a{
         line-height: 1.2;
     }
 
+    /************************** PRESENTATION **************************/
+
     .pres-infos{
         font-size: 1.2em;
         font-weight: 500;
@@ -404,6 +433,8 @@ nav>a{
         text-align: center;
         height: auto;
     }
+
+    /************************** SERVICES **************************/
 
     .services-plateformes-cadre {
         margin: 1em auto 1em;
@@ -434,6 +465,16 @@ nav>a{
     .services-sur-mesure-title-img {
         width: 90px;
     }
+
+    /************************** COMPETENCES **************************/
+
+    .comp-pie{
+        width: 80px;
+        height: 40px;
+        padding: 12px;
+    }
+
+    /************************** FOOTER **************************/
 
     .mdl-mini-footer__left-section { 
         text-align: center !important; 
