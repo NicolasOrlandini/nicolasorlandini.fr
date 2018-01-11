@@ -5,7 +5,7 @@ $siteKey = '6LfZQ0AUAAAAAE_VuY8Ayl99Cjwzpj_kX6YbtsrC'; // votre clé publique
 $secret = '6LfZQ0AUAAAAAApVJfXCQ9vBr67UK_Si1GKb1UbL'; // votre clé privée
 ?>
 <div class="mdl-grid portfolio-max-width portfolio-contact">
-    <form action="" class="" method="POST">
+    <form action="#" class="" method="POST" enctype="multipart/form-data">
         <?php /*require 'getCaptcha.php'; */?>
         <div class="container-civility">
             <label class="civility" for="">Civilité</label>
@@ -79,10 +79,10 @@ $secret = '6LfZQ0AUAAAAAApVJfXCQ9vBr67UK_Si1GKb1UbL'; // votre clé privée
             <input class="mdl-textfield__input" placeholder="Importez un document" name="attachment" type="text" id="TEXT_ID" readonly />
             <div class="mdl-button mdl-button--icon mdl-button--file">
                 <i class="material-icons">attach_file</i>
-                <input type="file" name="NAME" id="ID" onchange="document.getElementById('TEXT_ID').value=this.files[0].name;" />
+                <input type="file" multiple name="attachment" id="uploaded_file" onchange="document.getElementById('TEXT_ID').value=this.files[0].name;" />
             </div>
         </div>
-        <div class="g-recaptcha" data-sitekey="<?php echo $siteKey; ?>"></div><br>
+        <!--<div class="g-recaptcha" data-sitekey="<?php /*echo $siteKey; */?>"></div><br>-->
         <button class="mdl-button contact mdl-js-button mdl-button--raised mdl-js-ripple-effect contact-send" name="submit" type="submit">
             ENVOYER
         </button>

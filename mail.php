@@ -28,11 +28,15 @@ if (isset($_POST["submit"])){
 
             //Recipients
             $mail->setFrom($_POST["email"],$_POST["gender"] . " " . strtoupper($_POST["nom"]) . " " . $_POST["prenom"]);
-            $mail->addAddress('contact@orlandini.fr');     // Add a recipient
+            $mail->addAddress('dev.orlandini@outlook.com');     // Add a recipient
 
             //Attachments
-            //$mail->addAttachment($_POST["attachment"]);         // Add attachments
-            //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
+            if (isset($_FILES['attachment']) && $_FILES['attachment']['error'] == UPLOAD_ERR_OK) {
+                $uploaddir = 'uploads/';
+                $uploadfile = $uploaddir . basename($_FILES['attachment']['name']);
+                move_uploaded_file($_FILES['attachment']['tmp_name'], $uploadfile);
+                $mail -> addattachment($uploadfile, basename($_FILES["attachment"]["name"]), "base64", $_FILES["attachment"]["type"]);
+            }
 
             //Content
             $mail->isHTML(true);                                  // Set email format to HTML
