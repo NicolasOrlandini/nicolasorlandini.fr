@@ -31,11 +31,23 @@ if (isset($_POST["submit"])){
             $mail->addAddress('dev.orlandini@outlook.com');     // Add a recipient
 
             //Attachments
-            if (isset($_FILES['attachment']) && $_FILES['attachment']['error'] == UPLOAD_ERR_OK) {
-                $uploaddir = 'uploads/';
-                $uploadfile = $uploaddir . basename($_FILES['attachment']['name']);
-                move_uploaded_file($_FILES['attachment']['tmp_name'], $uploadfile);
-                $mail -> addattachment($uploadfile, basename($_FILES["attachment"]["name"]), "base64", $_FILES["attachment"]["type"]);
+            $taille = count($_FILES['attachment']['name']);
+            if ($taille > 0) {
+                for ($i=0; $i<$taille; $i++){
+                    $tmpFilePath = $_FILES['attachment']['tmp_name'][$i];
+                    if ($tmpFilePath != ""){
+                        //Setup our new file path
+                        $newFilePath = "./uploads/" . $_FILES['attachment']['name'][$i];
+
+                        //Upload the file into the temp dir
+                        if(move_uploaded_file($tmpFilePath, $newFilePath)) {
+                            $mail -> addattachment($newFilePath, basename($_FILES["attachment"]["name"][$i]), "base64", $_FILES["attachment"]["type"][$i]);
+                        }
+                    }
+                }
+            }
+            else{
+                echo 'nique ta mere';
             }
 
             //Content
@@ -57,6 +69,12 @@ if (isset($_POST["submit"])){
             if($mail->send()){
                 return;
             }
+            /*$dir = opendir($uploaddir);
+            while($file == readdir($dir)){
+                if(file_exists($file))
+                    unlink($dir.$file);
+            }
+            closedir($dir);*/
         }
     } catch (Exception $e) {
         echo "Le message n'a pas pu être envoyé." . "<br>";
