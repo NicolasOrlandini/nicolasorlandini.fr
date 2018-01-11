@@ -1,4 +1,3 @@
-
 body{
     font-family: "Roboto","Helvetica","Arial",sans-serif;
     color: #757575;
@@ -11,11 +10,6 @@ body{
     right: 2%;
 }
 
-.prenom{
-    font-size: 85px;
-    font-weight: 300;
-}
-
 .btn-orange {
     background: #FF7E00 !important;
     color: white !important;
@@ -25,22 +19,23 @@ body{
     background: #B25800 !important;
 }
 
-.nom{
-    font-size: 90px;
-    font-weight: 280;
-}
 a {
     color: #00C5FF;
     text-decoration: none;
 }
 
-.bio-link {
-    transition: all 100ms cubic-bezier(0.25, 0.1, 0.25, 1);
+.justify{
+    text-align: justify; 
 }
 
-.bio-link:hover {
-    color: #19CBFF;
-    text-decoration: underline;
+h4 {
+    font-size: 25px;
+    margin-bottom: 10px !important;
+    margin-top: 10px;
+}
+
+h5 {
+    margin-top: -10px;
 }
 
 .background{
@@ -56,65 +51,59 @@ a {
     background: #eceff1;
 }
 
-.contact-background {
-    background: url(../img/lightbulb.svg) no-repeat;
-    background-color: #dee2e4;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+.content {
     position: relative;
-    text-align: center;
-    padding: 40px;
-    /*opacity: 0.7;
-    filter: alpha(opacity=70); /* For IE8 and earlier */
+    z-index: 10;
+    padding-top: 60px;
+    padding-bottom: 90px;
 }
-
-hr{
-    background: rgba(0,0,0,.25);
-    margin: 0;
-}
-
-.contact{
-    height: 52px;
-    padding: 10px;
-    width: 180px;
-    margin: 0 auto;
-    display: block;
-    border: none;
-    border-radius: 2px;
-    font-family: "Roboto","Helvetica","Arial",sans-serif;
-    font-size: 16px;
-    text-transform: uppercase;
-    letter-spacing: 0;
-    overflow: hidden;
-    outline: none;
-    cursor: pointer;
-    text-decoration: none;
-    text-align: center;
-}
-
-.contact-send{
-    background: #00C5FF;
-    color: #fff;
-}
-
-.contact-send:hover{
-    background: #008AB2;
+  
+.site-header {
+    background: #fff;
+    color: #757575;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.35);
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
 }
 
 .pie{
+    margin: 0 auto;
+    width: 104px;
+    height: 52px;
     padding: 20px;
 }
 
-  .mdl-layout__header-row {
-    padding: 0 40px;
-  }
-  
-  .mdl-layout.has-drawer .mdl-layout__header-row {
-    padding: 0 40px 0 80px;
+.subtitle{
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    color: #757575;
+    font-size: 50px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    font-weight: 400;
+}
+
+/************************** MENU **************************/
+
+.nav-link {
+    font-size: 12px;
+    font-size: .75rem;
+    padding: 0 10px;
+    padding: 0 .625rem;
+    color: #848484;
+    display: inline-block;
+}
+
+nav>a{
+    color: #757575 !important;
+    font-family: "Roboto","Helvetica","Arial",sans-serif !important;
   }
 
-.page-title {
+/************************** TITLE **************************/
+
+.title-background {
     background: url(../img/keyboard.jpg) no-repeat;
     background-position: center;
     background-size: cover;
@@ -123,9 +112,9 @@ hr{
     text-align: center;
     padding: 40px;
     min-height: 100%;
-  }
+}
   
-  .page-title::before {
+.title-background::before {
     content: "";
     display: block;
     -webkit-filter: blur(1px) brightness(0.5);
@@ -140,128 +129,79 @@ hr{
     bottom: 0px;
     background: inherit;
     z-index: 0;
-  }
-  
-  .content {
-    position: relative;
-    z-index: 10;
-    padding-top: 60px;
-    padding-bottom: 90px;
-  }
-  
-  .title {
+}
+
+.title-prenom{
+    font-size: 85px;
+    font-weight: 300;
+}
+
+.title-nom{
+    font-size: 90px;
+    font-weight: 280;
+}
+
+.title {
     font-family: "Roboto","Helvetica","Arial",sans-serif;
     color: whitesmoke;
-     /*color: #757575;*/
     padding: 30px;
     padding-top: 150px;
-  }
+ }
   
-  .title-cadre {
+.title-cadre {
     color: white;
     padding: 17px;
     margin-bottom: 20px;
     border: 1px solid gray;
     display: inline-block;
     width: 70%;
-  }
+}
 
-  .title-activite {
+.title-activite {
     font-size: 1.9em;
     line-height: 1.2;
-  }
-
-  .title-regime{
-    font-size: 1.8em;
-    font-weight: 100;
-  }
-
-  .site-header {
-    background: #fff;
-    color: #757575;
-    box-shadow: 0 1px 6px rgba(0,0,0,0.35);
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-  }
-
-.nav-link {
-    font-size: 12px;
-    font-size: .75rem;
-    padding: 0 10px;
-    padding: 0 .625rem;
-    color: #848484;
-    display: inline-block;
 }
 
-.justify{
-    text-align: justify; 
+/************************** PRESENTATION **************************/
+
+.pres-link {
+    transition: all 100ms cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
-.cv-text{
+.pres-link:hover {
+    color: #19CBFF;
+    text-decoration: underline;
+}
+
+.pres-infos {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin: 7px;
+    text-decoration: none;
+}
+
+.pres-cv-txt{
     font-weight: 500;
     font-size: 1.2rem;
     margin-top: 20px;
 }
 
-nav>a{
-    color: #757575 !important;
-    font-family: "Roboto","Helvetica","Arial",sans-serif !important;
-  }
-
-.pie{
-    margin: 0 auto;
-    width: 104px;
-    height: 52px;
+.mdl-layout__header-row {
+    padding: 0 40px;
+}
+  
+.mdl-layout.has-drawer .mdl-layout__header-row {
+    padding: 0 40px 0 80px;
 }
 
-.subtitle{
-    font-family: "Roboto","Helvetica","Arial",sans-serif;
-    color: #757575;
-    font-size: 50px;
-    margin-bottom: 40px;
-    margin-top: 20px;
-    font-weight: 400;
-}
-
-.table-comp{
-    vertical-align: middle;
-    width: 100%;
-    text-align: center;
-}
-
-table {
-    table-layout: auto !important;
-}
-
-tr td {
-    width: auto !important;
-}
-
-h4 {
-    font-size: 25px;
-    margin-bottom: 10px !important;
-    margin-top: 10px;
-}
-
-h5 {
-    margin-top: -10px;
-}
-
-.plateforme-cadre {
-    margin : 28px;
-    padding: 10px;
-    background-color: #eceff1;
-    text-align: center;
-}
+/************************** SERVICES **************************/
 
 .services-text {
     font-size: 1.2em;
     font-weight: 600;
     text-transform: uppercase;
     margin: 30px;
+    padding-bottom: 8px;
 }
 
 .services-cadre {
@@ -301,27 +241,62 @@ h5 {
     width: 50px;
 }
 
-.pres-infos {
-    font-size: 1.2em;
-    font-weight: 600;
-    margin: 7px;
-    text-decoration: none;
+/************************** PLATEFORMES **************************/
+
+.plateforme-cadre {
+    margin : 28px;
+    padding: 10px;
+    background-color: #eceff1;
+    text-align: center;
 }
+
+/************************** CONTACT **************************/
+
+.contact-background {
+    background: url(../img/lightbulb.svg) no-repeat;
+    background-color: #dee2e4;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    text-align: center;
+    padding: 40px;
+    /*opacity: 0.7;
+    filter: alpha(opacity=70); /* For IE8 and earlier */
+}
+
+.contact{
+    height: 52px;
+    padding: 10px;
+    width: 180px;
+    margin: 0 auto;
+    display: block;
+    border: none;
+    border-radius: 2px;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    overflow: hidden;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+.contact-send{
+    background: #00C5FF;
+    color: #fff;
+}
+
+.contact-send:hover{
+    background: #008AB2;
+}
+
+/************************** FOOTER **************************/
 
 .customFooter { 
     padding: 0;
-}
-
-.divUp { 
-    background-color: #3f3f3f; 
-    padding: 0;
-    width: 100%; 
-}
-
-.divDown { 
-    background: #363636;
-    padding: 0;
-    width: 100%; 
 }
 
 .mdl-mega-footer__drop-down-section { 
@@ -340,8 +315,23 @@ h5 {
 }
 
 .footer-link:hover {
-    color: #599439;
+    color: #00C5FF;
 }
+
+.divUp { 
+    background-color: #3f3f3f; 
+    padding: 0;
+    width: 100%; 
+}
+
+.divDown { 
+    background: #363636;
+    padding: 0;
+    width: 100%; 
+}
+
+/************************** MEDIA QUERIES **************************/
+
 
 @media screen and (min-width: 750px) {
     .mdl-layout__header-row {
@@ -360,30 +350,11 @@ h5 {
 /* Les tablettes ???? */
 @media screen and (max-width: 750px) {
 
-    table {
-		overflow-x: auto;
-		display: block;
-    }
-
-    .prenom{
-        font-size: 42px;
-        font-weight: 400;
-    }
-    
-    .nom{
-        font-size: 45px;
-        font-weight: 500;
-    }
-
     .background{
         padding-top: 40px;
         padding-bottom: 40px;
         padding-left: 5px;
         padding-right: 5px;
-    }
-
-    .page-title {
-        padding: 10px;
     }
 
     .subtitle{
@@ -392,10 +363,24 @@ h5 {
         margin-top: 5px;
     }
 
+    .title-background {
+        padding: 10px;
+    }
+
     .title {
         padding: 18px;
         padding-top: 70px;
-      }
+    }
+
+    .title-prenom{
+        font-size: 42px;
+        font-weight: 400;
+    }
+    
+    .title-nom{
+        font-size: 45px;
+        font-weight: 500;
+    }
 
     .title-cadre {
         padding: 10px;
@@ -405,14 +390,9 @@ h5 {
     .title-activite {
         font-size: 1.2em;
         line-height: 1.2;
-      }
-    
-      .title-regime{
-        font-size: 1.1em;
-        font-weight: 100;
-      }
+    }
 
-      .pres-infos{
+    .pres-infos{
         font-size: 1.2em;
         font-weight: 500;
         margin: 5px;
@@ -420,9 +400,14 @@ h5 {
 
     .plateforme-cadre {
         margin : 20px;
-        padding: 8px;
+        padding: 2px;
         text-align: center;
         height: auto;
+    }
+
+    .services-plateformes-cadre {
+        margin: 1em auto 1em;
+        padding: 1px;
     }
 
     .services-cadre{
@@ -433,7 +418,13 @@ h5 {
 
     .services-text {
         font-size: 1.1em;
-        margin: 5px;
+        margin: 2px;
+    }
+
+    .services-sur-mesure-cadre {
+        padding: 8px !important;
+        margin: 1em auto 1em;
+        padding: 2em 0;
     }
 
     .services-img {

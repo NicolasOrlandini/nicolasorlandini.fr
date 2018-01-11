@@ -134,11 +134,11 @@
 
     <main>
         <div class="page-content">
-            <div class="blur page-title">
+            <div class="blur title-background">
                 <div class="content">
                     <h1 class="title">
-                        <span class="prenom">Nicolas</span>
-                        <span class="nom">ORLANDINI</span>
+                        <span class="title-prenom">Nicolas</span>
+                        <span class="title-nom">ORLANDINI</span>
                     </h1>
                     <div class="title-cadre">
                         <h2 class="title-activite">Création d'applications mobiles et web en Freelance</h2>
@@ -231,7 +231,7 @@
                     <div class="mdl-cell mdl-cell--4-col">
                         <i class="material-icons">call</i>
                         <p class="pres-infos">
-                            <a class="bio-link" href="tel:0620703004">06 20 70 30 04</a>
+                            <a class="pres-link" href="tel:0620703004">06 20 70 30 04</a>
                         </p>
                     </div>
                     <div class="mdl-cell mdl-cell--4-col">
@@ -241,7 +241,7 @@
                     <div class="mdl-cell mdl-cell--4-col">
                         <i class="material-icons">mail_outline</i>
                         <p class="pres-infos">
-                            <a class="bio-link" href="mailto:contact@orlandini.fr">contact@orlandini.fr</a>
+                            <a class="pres-link" href="mailto:contact@orlandini.fr">contact@orlandini.fr</a>
                         </p>
                     </div>
                 </div>
@@ -259,7 +259,7 @@
                         de qualité est indispensable et fait toute la différence. Mon statut me permet de m'investir totalement
                         dans les projets que je réalise pour obtenir un résultat au plus proche de vos attentes.
                     </div>
-                    <div class="mdl-cell mdl-cell--4-col cv-text">
+                    <div class="mdl-cell mdl-cell--4-col pres-cv-txt">
                         <span>Téléchargez mon CV</span>
                         <br>
                         <br>

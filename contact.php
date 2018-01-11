@@ -1,8 +1,8 @@
 <?php
 require_once 'mail.php';
 require_once 'recaptcha.php';
-$siteKey = '6LftGzgUAAAAAPIVLFDzuG0nL1e_054V-AltFU3T'; // votre clé publique
-$secret = '6LftGzgUAAAAANgO8xSCE1avLBgJQKUAJPzJjPzb'; // votre clé privée
+$siteKey = '6LfZQ0AUAAAAAE_VuY8Ayl99Cjwzpj_kX6YbtsrC'; // votre clé publique
+$secret = '6LfZQ0AUAAAAAApVJfXCQ9vBr67UK_Si1GKb1UbL'; // votre clé privée
 ?>
 <div class="mdl-grid portfolio-max-width portfolio-contact">
     <form action="" class="" method="POST">
@@ -82,7 +82,7 @@ $secret = '6LftGzgUAAAAANgO8xSCE1avLBgJQKUAJPzJjPzb'; // votre clé privée
                 <input type="file" name="NAME" id="ID" onchange="document.getElementById('TEXT_ID').value=this.files[0].name;" />
             </div>
         </div>
-        <!--<div class="g-recaptcha" data-sitekey="<?php /*echo $siteKey; */?>"></div><br>-->
+        <div class="g-recaptcha" data-sitekey="<?php echo $siteKey; ?>"></div><br>
         <button class="mdl-button contact mdl-js-button mdl-button--raised mdl-js-ripple-effect contact-send" name="submit" type="submit">
             ENVOYER
         </button>
