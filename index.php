@@ -377,14 +377,14 @@
         </div>
         <div class="mdl-mini-footer divDown">
             <ul class="list-unstyled">
-                <div>
+                <div class="center-footer">
                     <img class="footer-logo" alt="ON-logo" src="./img/logo_beta-test.png"/>
                 </div>
                 <li>
-                    <p class="mdl-logo">© Nicolas ORLANDINI</p>
+                    <p class="mdl-logo center-footer">© Nicolas ORLANDINI</p>
                 </li>
                 <li>
-                    <p>Tous droits réservés - 2017-2018</p>
+                    <p class="center-footer">Tous droits réservés - 2017-2018</p>
                 </li>
             </ul>
             <div class="mdl-mini-footer__right-section">

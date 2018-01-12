@@ -331,7 +331,6 @@ nav>a{
 }
 
 .divUp { 
-    background-color: #3f3f3f; 
     padding: 0;
     width: 100%; 
 }
@@ -350,6 +349,11 @@ nav>a{
     width: 55px;
     padding: 10px;
     margin: 0  auto;
+}
+
+.center-footer{
+    text-align: center;
+    width: 100%;
 }
 
 /************************** MEDIA QUERIES **************************/
