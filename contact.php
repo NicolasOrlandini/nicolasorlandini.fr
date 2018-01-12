@@ -82,7 +82,7 @@ $secret = '6LfZQ0AUAAAAAApVJfXCQ9vBr67UK_Si1GKb1UbL'; // votre clé privée
                 <input type="file" multiple name="attachment[]" id="uploaded_file" onchange="getFiles();" />
             </div>
         </div>
-        <!--<div class="g-recaptcha" data-sitekey="<?php /*echo $siteKey; */?>"></div><br>-->
+        <div class="g-recaptcha" data-sitekey="<?php echo $siteKey; ?>"></div><br>
         <button class="mdl-button contact mdl-js-button mdl-button--raised mdl-js-ripple-effect contact-send" name="submit" type="submit">
             ENVOYER
         </button>

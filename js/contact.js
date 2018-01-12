@@ -13,7 +13,7 @@ ready(function() {
     new window['MaterialChipInput'](document.getElementById('demo-1'));*/
     var withSearch = new window['MaterialChipInput'](document.getElementById('demo-2'));
     withSearch.addSearch(function(query, callback) {
-        var techno = ["Prout", "Cacahuète", "Macbook", "Emily Ratajkowski", "Clara Morgane", "Tchitchi"];
+        var techno = ["Java", "Swift", "html5", "CSS3", "SQL", "Géolocalisation"];
         var regex = new RegExp(query, 'i');
         callback(techno.filter(function(item) {
             return item.search(regex) != -1;
