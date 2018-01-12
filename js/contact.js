@@ -21,6 +21,17 @@ ready(function() {
     });
 });
 
+function getFiles(){
+    var files = document.getElementById('uploaded_file').files;
+    var liste = '';
+
+    for(var i=0; i<files.length; i++)
+        liste += "," + files[i].name;
+
+    document.getElementById('TEXT_ID').value = liste.substr(1);
+}
+
+
 /* Vérification du recaptcha */
 
 var verifyCallback = function (response) {
