@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" xmlns="http://www.w3.org/1999/html">
+<html lang="fr">
 
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -31,9 +31,9 @@
     <link rel="stylesheet" href="./css/contact.css" />
     <link rel="stylesheet" href="./css/app.css" />
     <link rel="stylesheet" href="./css/chips.css">
-    <link rel='stylesheet prefetch' href='http:////netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css'>
+    <link rel='stylesheet prefetch' href='https:////netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css'>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
     <link rel ="icon" type="image/png" href="favicon.ico" >
     <link rel ="apple-touch-icon" href="favicon.ico">
     <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
@@ -378,7 +378,7 @@
         <div class="mdl-mini-footer divDown">
             <ul class="list-unstyled">
                 <div class="center-footer">
-                    <img class="footer-logo" alt="ON-logo" src="./img/logo_beta-test.png"/>
+                    <img class="footer-logo" alt="ON-logo" src="./img/logo_mini.png"/>
                 </div>
                 <li>
                     <p class="mdl-logo center-footer">© Nicolas ORLANDINI</p>
