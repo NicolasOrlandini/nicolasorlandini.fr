@@ -55,18 +55,27 @@ if (isset($_POST["submit"])){
             $telephone = $_POST["telephone"];
             $plateforme = "";
             foreach ($_POST["plateforme"] as $plateformes) {
-                $plateforme .= $plateformes . "/";
+                $plateforme .= $plateformes . ",";
             }
+            var_dump($plateforme);
             /*$message .= "Explication du projet: " . $_POST["message"] . "\n"
                 . "Plateforme(s) choisie(s): " . rtrim($plateforme, '/') . "\n"
                 . "Les technologies à utiliser: " . $chips . "\n"
                 . "Coordonnées du contact: " . $telephone;*/
-            $message = createMail(strtoupper($_POST["gender"]),strtoupper($_POST["nom"]) . " " . ucfirst($_POST["prenom"]), $_POST["sujet"], $_POST["message"], $_POST["company"], $_POST["email"], $_POST["telephone"]);
+            $message = createMail(
+                strtoupper($_POST["gender"]),
+                strtoupper($_POST["nom"]) . " " . ucfirst($_POST["prenom"]),
+                $_POST["sujet"], $_POST["message"],
+                $_POST["company"], $_POST["email"],
+                $_POST["telephone"], $plateforme, $aChips);
             $mail->Body = str_replace("\n", "<br>", utf8_encode($message));
 
-            if($mail->send()){
+            var_dump($aChips);
+            var_dump($plateforme.explode(' ', $plateforme));
+
+            /*if($mail->send()){
                 return;
-            }
+            }*/
             /*$dir = opendir($uploaddir);
             while($file == readdir($dir)){
                 if(file_exists($file))
@@ -82,7 +91,7 @@ if (isset($_POST["submit"])){
     echo "<script>alert('Des champs obligatoires sont manquants')</script>";
 }*/
 
-function createMail($civility, $person, $projectName, $textProject, $entreprise, $email, $tel){
+function createMail($civility, $person, $projectName, $textProject, $entreprise, $email, $tel, $plateforme, $chips){
     $html = '';
 
     $html .= $civility . " " . $person . "<br><br>";
@@ -90,6 +99,8 @@ function createMail($civility, $person, $projectName, $textProject, $entreprise,
     $hr = "<br><hr><br>";
     $table = "<div style='width:100%;text-align:center'><div style='display:inline-block;'><table width='250' border='1'>".
         "<thead><td>PLATEFORMES</td><td>TECHNOLOGIES</td></thead></table></div></div>";
+
+
 
     $contact = "<div style='position:absolute;width:100%'><div style='vertical-align:middle;padding-bottom:5px;text-align:center;'><br><span>".
                 "<u>CONTACT</u></span><br></div><br>Entreprise: " . $entreprise . "<br> E-mail: " . $email . "<br> Tel: " . $tel ." </div>";

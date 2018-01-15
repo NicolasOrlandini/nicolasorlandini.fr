@@ -51,11 +51,12 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-55C6TGX"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <button class="mdl-button mdl-js-button mdl-button--fab Back-to-top btn-orange">
-        <a href="javascript:" id="return-to-top">
+    <a href="javascript:" id="return-to-top">
+        <button class="mdl-button mdl-js-button mdl-button--fab Back-to-top btn-orange">
             <i class="material-icons colorButtonToTop">keyboard_arrow_up</i>
-        </a>
-    </button>
+        </button>
+    </a>
+
 
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
         <header class="site-header">
@@ -183,12 +184,11 @@
                 </div>
                 <hr>
                 <p class="cv-title">Téléchargez mon CV</p>
-                <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect btn-orange">
-                    <a href="./fichiers" download="CV_Orlandini_Nicolas.pdf">
+                <a href="./fichiers" download="CV_Orlandini_Nicolas.pdf">
+                    <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect btn-orange">
                         <i class="material-icons colorButtonToTop">file_download</i>
-                    </a>
-                </button>
-
+                    </button>
+                </a>
             </div>
             <div class="background" id="serv">
                 <h3 class="sub subtitle">Mes services</h3>
@@ -232,11 +232,10 @@
                                 Je peux réaliser un diagnostic de votre application afin de permettre l'ajout
                                 d'éventuelles fonctionnalités ainsi que l'optimisation de votre application.</p>
                             </div>
-                            </div>
                         </div>
-                        <div class="mdl-cell mdl-cell--4-col">
-                            <h3 class="sub services-title">Une nouvelle vie pour vos applications</h3>
-                        </div>  
+                    </div>
+                    <div class="mdl-cell mdl-cell--4-col">
+                        <h3 class="sub services-title">Une nouvelle vie pour vos applications</h3>
                     </div>
                 </div>
                 <div class="plateforme-cadre">
@@ -326,7 +325,9 @@
             </div>-->
 
             <div class="mdl-mega-footer__drop-down-section">
-                <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                <label>
+                    <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                </label>
                 <h3 class="mdl-mega-footer__heading">Me contacter</h3>
                 <ul class="mdl-mega-footer__link-list">
                     <li>
@@ -341,7 +342,9 @@
                 </ul>
             </div>
             <div class="mdl-mega-footer__drop-down-section">
-                <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                <label>
+                    <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                </label>
                 <h3 class="mdl-mega-footer__heading">Mes réseaux</h3>
                 <ul class="mdl-mega-footer__link-list">
                     <ul class="social-icons icon-circle icon-rotate list-unstyled list-inline">
