@@ -159,6 +159,10 @@ nav>a:hover{
     font-size: 1.2em;
 }
 
+.colorButtonToTop {
+    color:white;
+}
+
 /************************** PRESENTATION **************************/
 
 .pres-link {

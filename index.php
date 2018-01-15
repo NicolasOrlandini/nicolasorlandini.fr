@@ -51,11 +51,12 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-55C6TGX"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <a href="javascript:" id="return-to-top">
-        <button class="mdl-button mdl-js-button mdl-button--fab Back-to-top btn-orange">
-            <i class="material-icons">keyboard_arrow_up</i>
-        </button>
-    </a>
+    <button class="mdl-button mdl-js-button mdl-button--fab Back-to-top btn-orange">
+        <a href="javascript:" id="return-to-top">
+            <i class="material-icons colorButtonToTop">keyboard_arrow_up</i>
+        </a>
+    </button>
+
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
         <header class="site-header">
             <div class="mdl-layout__header-row mdl-layout--large-screen-only">
@@ -182,11 +183,12 @@
                 </div>
                 <hr>
                 <p class="cv-title">Téléchargez mon CV</p>
-                <a href="./fichiers" download="CV_Orlandini_Nicolas.pdf">
-                    <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect btn-orange">
-                        <i class="material-icons">file_download</i>
-                    </button>
-                </a>
+                <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect btn-orange">
+                    <a href="./fichiers" download="CV_Orlandini_Nicolas.pdf">
+                        <i class="material-icons colorButtonToTop">file_download</i>
+                    </a>
+                </button>
+
             </div>
             <div class="background" id="serv">
                 <h3 class="sub subtitle">Mes services</h3>
@@ -202,13 +204,13 @@
                                 <p class="services-text">Idée originale d'application</p>
                                 <p class="justify">Vous êtes un professionnel, un entrepreneur ? Vous avez une idée originale d'application ? 
                                 Que vous ayez déjà rédigé un cahier des charges ou non, nous pouvons ensemble réfléchir au meilleur 
-                                moyen de concretiser votre idée.</p>
+                                moyen de concrétiser votre idée.</p>
                             </div>
                             <div class="mdl-cell mdl-cell--4-col services-sur-mesure-cadre">
                             <p class="services-text">Répondre à un besoin spécifique lié a votre activité</p>
                                 <p class="justify">Vous avez besoin d'une application accessible rapidement sur des terminaux mobiles 
                                 pour vous aider au quotidien dans votre activité ? Nous pouvons ensemble réfléchir au 
-                                meilleur moyen de concretiser cette idée.</p>
+                                meilleur moyen de concrétiser cette idée.</p>
                             </div>
                         </div>
                     </div>
@@ -227,7 +229,7 @@
                                 <p class="services-text">Ajout de nouvelles fonctionnalités</p>
                                 <p class="justify">Vous disposez d'une application, vous envisagez d'ajouter une ou plusieurs 
                                 fonctionnalités pour répondre à un nouveau besoin ou gagner une nouvelle clientèle ? 
-                                Je peux réaliser un diagnostique de votre application afin de permettre l'ajout 
+                                Je peux réaliser un diagnostic de votre application afin de permettre l'ajout
                                 d'éventuelles fonctionnalités ainsi que l'optimisation de votre application.</p>
                             </div>
                             </div>
@@ -365,9 +367,9 @@
         </div>
         <div class="mdl-mini-footer divDown">
             <ul class="list-unstyled">
-                <div class="center-footer">
+                <li class="center-footer">
                     <img class="footer-logo" alt="ON-logo" src="./img/logo_mini.png"/>
-                </div>
+                </li>
                 <li>
                     <p class="mdl-logo center-footer">© Nicolas ORLANDINI</p>
                 </li>

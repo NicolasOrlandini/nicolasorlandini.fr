@@ -8,7 +8,7 @@ $secret = '6LfZQ0AUAAAAAApVJfXCQ9vBr67UK_Si1GKb1UbL'; // votre clé privée
     <form action="#" class="" method="POST" enctype="multipart/form-data">
         <?php require 'getCaptcha.php'; ?>
         <div class="container-civility">
-            <label class="civility" for="">Civilité</label>
+            <label class="civility" for="civility">Civilité</label>
             <div class="">
                 <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect radiobutton"
                        for = "monsieur">
@@ -44,7 +44,7 @@ $secret = '6LfZQ0AUAAAAAApVJfXCQ9vBr67UK_Si1GKb1UbL'; // votre clé privée
             <label class="mdl-textfield__label" for="telephone">Numéro de téléphone...</label>
         </div>
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label plateforme">
-            <label for="plateforme">Plateforme de votre projet</label>
+            <label for="plateforme[]">Plateforme de votre projet</label>
             <div>
                 <label class = "mdl-checkbox mdl-js-checkbox" for = "checkbox1">
                     <input type="checkbox" name="plateforme[]" value="android" id ="checkbox1" class="mdl-checkbox__input">
@@ -84,7 +84,7 @@ $secret = '6LfZQ0AUAAAAAApVJfXCQ9vBr67UK_Si1GKb1UbL'; // votre clé privée
             <label class="mdl-textfield__label" for="my-input-2">Technologies</label>
         </div>
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <textarea class="mdl-textfield__input" name="message" type="text" rows="5" id="note"></textarea>
+            <textarea class="mdl-textfield__input" name="message" rows="5" id="note"></textarea>
             <label class="mdl-textfield__label" for="note">Parlez-moi de votre projet...</label>
         </div>
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--file">
