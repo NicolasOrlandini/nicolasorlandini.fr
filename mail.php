@@ -28,7 +28,7 @@ if (isset($_POST["submit"])){
 
             //Recipients
             $mail->setFrom($_POST["email"],$_POST["gender"] . " " . strtoupper($_POST["nom"]) . " " . $_POST["prenom"]);
-            $mail->addAddress('contact@orlandini.fr');     // Add a recipient
+            $mail->addAddress('dev.orlandini@outlook.com');     // Add a recipient
 
             //Attachments
             $taille = count($_FILES['attachment']['name']);
@@ -46,25 +46,23 @@ if (isset($_POST["submit"])){
                     }
                 }
             }
-            else{
-                echo 'nique ta mere';
-            }
 
             //Content
             $mail->isHTML(true);                                  // Set email format to HTML
-            $mail->Subject = "Sujet: " . $_POST["sujet"];
-            $chips = $_POST["demo-2"];
-            $plateforme = "";
+            $mail->Subject = $_POST["sujet"];
+            $aChips = explode(' ', $_POST["demo-2"]);
             $message = "";
             $telephone = $_POST["telephone"];
+            $plateforme = "";
             foreach ($_POST["plateforme"] as $plateformes) {
                 $plateforme .= $plateformes . "/";
             }
-            $message .= "Explication du projet: " . $_POST["message"] . "\n"
+            /*$message .= "Explication du projet: " . $_POST["message"] . "\n"
                 . "Plateforme(s) choisie(s): " . rtrim($plateforme, '/') . "\n"
                 . "Les technologies à utiliser: " . $chips . "\n"
-                . "Coordonnées du contact: " . $telephone;
-            $mail->Body = str_replace("\n", "<br>", $message);
+                . "Coordonnées du contact: " . $telephone;*/
+            $message = createMail(strtoupper($_POST["gender"]),strtoupper($_POST["nom"]) . " " . ucfirst($_POST["prenom"]), $_POST["sujet"], $_POST["message"], $_POST["company"], $_POST["email"], $_POST["telephone"]);
+            $mail->Body = str_replace("\n", "<br>", utf8_encode($message));
 
             if($mail->send()){
                 return;
@@ -79,4 +77,25 @@ if (isset($_POST["submit"])){
     } catch (Exception $e) {
         echo "Le message n'a pas pu être envoyé." . "<br>";
     }
+}
+/*else {
+    echo "<script>alert('Des champs obligatoires sont manquants')</script>";
+}*/
+
+function createMail($civility, $person, $projectName, $textProject, $entreprise, $email, $tel){
+    $html = '';
+
+    $html .= $civility . " " . $person . "<br><br>";
+    $projet = "<div style='text-align: center;'><span><u>" . $projectName . "</u></span><br><div style='text-align: center;'>" . $textProject ."</div></div><br>";
+    $hr = "<br><hr><br>";
+    $table = "<div style='width:100%;text-align:center'><div style='display:inline-block;'><table width='250' border='1'>".
+        "<thead><td>PLATEFORMES</td><td>TECHNOLOGIES</td></thead></table></div></div>";
+
+    $contact = "<div style='position:absolute;width:100%'><div style='vertical-align:middle;padding-bottom:5px;text-align:center;'><br><span>".
+                "<u>CONTACT</u></span><br></div><br>Entreprise: " . $entreprise . "<br> E-mail: " . $email . "<br> Tel: " . $tel ." </div>";
+
+    $html .= $projet . $hr . $table . $hr . $contact;
+
+
+    return $html;
 }

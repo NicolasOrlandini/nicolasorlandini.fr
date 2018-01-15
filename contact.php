@@ -34,11 +34,11 @@ $secret = '6LfZQ0AUAAAAAApVJfXCQ9vBr67UK_Si1GKb1UbL'; // votre clé privée
             <label class="mdl-textfield__label" for="prenom">Prénom...</label>
         </div>
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <input class="mdl-textfield__input" name="email" type="text" id="Email">
+            <input required class="mdl-textfield__input" name="email" type="text" id="Email">
             <label class="mdl-textfield__label" for="Email">Email...</label>
         </div>
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <input class="mdl-textfield__input" name="telephone" type="tel" pattern="^\+?\s*(\d+\s?){8,}$" maxlength="10" id="telephone">
+            <input required class="mdl-textfield__input" name="telephone" type="tel" pattern="^\+?\s*(\d+\s?){8,}$" maxlength="10" id="telephone">
             <label class="mdl-textfield__label" for="telephone">Numéro de téléphone...</label>
         </div>
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label plateforme">
@@ -46,24 +46,35 @@ $secret = '6LfZQ0AUAAAAAApVJfXCQ9vBr67UK_Si1GKb1UbL'; // votre clé privée
             <div>
                 <label class = "mdl-checkbox mdl-js-checkbox" for = "checkbox1">
                     <input type="checkbox" name="plateforme[]" value="android" id ="checkbox1" class="mdl-checkbox__input">
-                    <i class="material-icons androidColor">android</i><span class = "mdl-checkbox__label">Android</span>
+                    <img class="logoAndroid" src="./img/android_logo_2.png" alt="Android logo"><span class = "mdl-checkbox__label">Android</span>
                 </label>
             </div>
-
             <div>
-                <label class = "mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"
-                       for = "checkbox2">
-                    <input type="checkbox" name="plateforme[]" value="ios" id = "checkbox2" class = "mdl-checkbox__input">
-                    <i class="material-icons iosColor">phone_iphone</i><span class = "mdl-checkbox__label">iOS</span>
+                <label class = "mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for = "checkbox2">
+                    <input type="checkbox" name="plateforme[]" value="uwp" id = "checkbox2" class = "mdl-checkbox__input">
+                    <img class="logo" src="./img/windows_logo.png" alt="C# logo"><span class = "mdl-checkbox__label">UWP</span>
+                </label>
+            </div>
+            <div>
+                <label class = "mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for = "checkbox3">
+                    <input type="checkbox" name="plateforme[]" value="ios" id = "checkbox3" class = "mdl-checkbox__input">
+                    <img class="logo" src="./img/Apple_Computer_Logo_rainbow.png" alt="iOS logo"><span class = "mdl-checkbox__label">iOS</span>
+                </label>
+            </div>
+            <div>
+            <div>
+                <label class = "mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for = "checkbox4">
+                    <input type="checkbox" name="plateforme[]" value="web" id = "checkbox4" class = "mdl-checkbox__input">
+                    <img class="logo" src="./img/HTML5_Logo.svg" alt="HTML5 logo"><span class = "mdl-checkbox__label">Web</span>
                 </label>
             </div>
         </div>
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <input class="mdl-textfield__input" name="sujet" type="text" id="sujet">
+            <input required class="mdl-textfield__input" name="sujet" type="text" id="sujet">
             <label class="mdl-textfield__label" for="sujet">Sujet...</label>
         </div>
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <input class="mdl-textfield__input" name="company" type="text" id="company">
+            <input required class="mdl-textfield__input" name="company" type="text" id="company">
             <label class="mdl-textfield__label" for="company">Entreprise...</label>
         </div>
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-chipfield" id="demo-2">
@@ -83,7 +94,7 @@ $secret = '6LfZQ0AUAAAAAApVJfXCQ9vBr67UK_Si1GKb1UbL'; // votre clé privée
             </div>
         </div>
         <div class="g-recaptcha" data-sitekey="<?php echo $siteKey; ?>"></div><br>
-        <button class="mdl-button contact mdl-js-button mdl-button--raised mdl-js-ripple-effect contact-send" name="submit" type="submit">
+        <button class="mdl-button contact mdl-js-button mdl-button--raised mdl-js-ripple-effect contact-send btnSend" name="submit" type="submit">
             ENVOYER
         </button>
     </form>

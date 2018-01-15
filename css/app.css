@@ -15,6 +15,6 @@ select:focus { outline: none }
 .mdl-checkbox { vertical-align: inherit !important; }
 .plateforme { text-align: left; }
 .mdl-checkbox.is-upgraded { padding-left: 30px; }
-.androidColor { color: #A4CA39; margin-right: 10px; }
-.iosColor { color: #D2D2C8; margin-right: 10px; }
+.logoAndroid { width: 15px; height: 18px; margin-right: 10px; }
+.logo { width: 18px; height: 18px; margin-right: 10px; }
 .civility { font-size: 15px; }
