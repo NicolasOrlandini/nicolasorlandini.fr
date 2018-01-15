@@ -325,9 +325,7 @@
             </div>-->
 
             <div class="mdl-mega-footer__drop-down-section">
-                <label>
-                    <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-                </label>
+                <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
                 <h3 class="mdl-mega-footer__heading">Me contacter</h3>
                 <ul class="mdl-mega-footer__link-list">
                     <li>
@@ -342,29 +340,31 @@
                 </ul>
             </div>
             <div class="mdl-mega-footer__drop-down-section">
-                <label>
-                    <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-                </label>
+                <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
                 <h3 class="mdl-mega-footer__heading">Mes réseaux</h3>
                 <ul class="mdl-mega-footer__link-list">
-                    <ul class="social-icons icon-circle icon-rotate list-unstyled list-inline">
-                        <li>
-                            <a href="https://github.com/NicolasOrlandini">
-                                <i class="fa fa-github"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/nicolas-orlandini-1b3871129/">
-                                <i class="fa fa-linkedin"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fa fa-skype"></i>
-                            </a>
-                        </li>
-                    </ul>
-                    <div data-layout="mini" class="codeur-profile-widget"></div>
+                    <li>
+                        <ul class="social-icons icon-circle icon-rotate list-unstyled list-inline">
+                            <li>
+                                <a href="https://github.com/NicolasOrlandini">
+                                    <i class="fa fa-github"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/nicolas-orlandini-1b3871129/">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-skype"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div data-layout="mini" class="codeur-profile-widget"></div>
+                    </li>
                 </ul>
             </div>
         </div>
