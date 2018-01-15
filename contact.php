@@ -6,7 +6,7 @@ $secret = '6LfZQ0AUAAAAAApVJfXCQ9vBr67UK_Si1GKb1UbL'; // votre clé privée
 ?>
 <div class="mdl-grid portfolio-max-width portfolio-contact">
     <form action="#" class="" method="POST" enctype="multipart/form-data">
-        <?php /*require 'getCaptcha.php'; */?>
+        <?php require 'getCaptcha.php'; ?>
         <div class="container-civility">
             <label class="civility" for="">Civilité</label>
             <div class="">
@@ -27,18 +27,20 @@ $secret = '6LfZQ0AUAAAAAApVJfXCQ9vBr67UK_Si1GKb1UbL'; // votre clé privée
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
             <input class="mdl-textfield__input" name="nom" pattern="[A-Z,a-z, ]*" type="text" id="nom">
             <label class="mdl-textfield__label" for="nom">Nom...</label>
-            <span class="mdl-textfield__error">Letters and spaces only</span>
+            <span class="mdl-textfield__error">Lettres et espaces seulement</span>
         </div>
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <input class="mdl-textfield__input" name="prenom" type="text" id="prenom">
+            <input class="mdl-textfield__input" name="prenom" pattern="[A-Z,a-z, ]*" type="text" id="prenom">
             <label class="mdl-textfield__label" for="prenom">Prénom...</label>
+            <span class="mdl-textfield__error">Lettres et espaces seulement</span>
         </div>
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <input required class="mdl-textfield__input" name="email" type="text" id="Email">
+            <input class="mdl-textfield__input" name="email" type="text" id="Email">
             <label class="mdl-textfield__label" for="Email">Email...</label>
+            <span class="mdl-textfield__error">Un email doit contenir un @</span>
         </div>
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <input required class="mdl-textfield__input" name="telephone" type="tel" pattern="^\+?\s*(\d+\s?){8,}$" maxlength="10" id="telephone">
+            <input class="mdl-textfield__input" name="telephone" type="tel" pattern="^\+?\s*(\d+\s?){8,}$" maxlength="10" id="telephone">
             <label class="mdl-textfield__label" for="telephone">Numéro de téléphone...</label>
         </div>
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label plateforme">
@@ -62,7 +64,6 @@ $secret = '6LfZQ0AUAAAAAApVJfXCQ9vBr67UK_Si1GKb1UbL'; // votre clé privée
                 </label>
             </div>
             <div>
-            <div>
                 <label class = "mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for = "checkbox4">
                     <input type="checkbox" name="plateforme[]" value="web" id = "checkbox4" class = "mdl-checkbox__input">
                     <img class="logo" src="./img/HTML5_Logo.svg" alt="HTML5 logo"><span class = "mdl-checkbox__label">Web</span>
@@ -70,11 +71,11 @@ $secret = '6LfZQ0AUAAAAAApVJfXCQ9vBr67UK_Si1GKb1UbL'; // votre clé privée
             </div>
         </div>
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <input required class="mdl-textfield__input" name="sujet" type="text" id="sujet">
+            <input class="mdl-textfield__input" name="sujet" type="text" id="sujet">
             <label class="mdl-textfield__label" for="sujet">Sujet...</label>
         </div>
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <input required class="mdl-textfield__input" name="company" type="text" id="company">
+            <input class="mdl-textfield__input" name="company" type="text" id="company">
             <label class="mdl-textfield__label" for="company">Entreprise...</label>
         </div>
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-chipfield" id="demo-2">
