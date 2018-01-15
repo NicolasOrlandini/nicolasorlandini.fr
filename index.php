@@ -4,7 +4,7 @@
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112276851-1"></script>
-    <script  async>
+    <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
@@ -31,12 +31,12 @@
     <link rel="stylesheet" href="./css/contact.css" />
     <link rel="stylesheet" href="./css/app.css" />
     <link rel="stylesheet" href="./css/chips.css">
-    <link rel='stylesheet prefetch' href='https:////netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css'>
+    <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css'>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
     <link rel ="icon" type="image/png" href="favicon.ico" >
     <link rel ="apple-touch-icon" href="favicon.ico">
-    <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+    <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script async src="./mdl/material.min.js"></script>
     <script async src="./js/chart/Chart.js"></script>
     <script async src="./js/index.js"></script>
@@ -60,7 +60,7 @@
         <header class="site-header">
             <div class="mdl-layout__header-row mdl-layout--large-screen-only">
                 <span class="site-header__title">
-                    <img src="./img/logo_on.png" width="180px" alt="ON logo">
+                    <img src="./img/logo_on.png" width="180" alt="ON logo">
                 </span>
                 <div class="mdl-layout-spacer"></div>
                 <ul class="social-icons icon-circle icon-rotate list-unstyled list-inline">
@@ -76,11 +76,6 @@
                     </li>
                     <li>
                         <a href="#">
-                            <i class="fa fa-google-plus"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
                             <i class="fa fa-skype"></i>
                         </a>
                     </li>
@@ -90,16 +85,16 @@
                 <!-- Navigation -->
                 <div class="mdl-layout-spacer"></div>
                 <nav class="mdl-navigation">
-                    <a class="mdl-navigation__link" href="#serv">Services</a>
                     <a class="mdl-navigation__link" href="#pres">Présentation</a>
-                    <a class="mdl-navigation__link" href="">Projets réalisés</a>
+                    <a class="mdl-navigation__link" href="#serv">Services</a>
+                    <!--<a class="mdl-navigation__link" href="">Projets réalisés</a>-->
                     <a class="mdl-navigation__link" href="#contact">Me contacter</a>
                 </nav>
                 <div class="mdl-layout-spacer"></div>
             </div>
             <div class="mdl-layout__header-row mdl-layout--small-screen-only">
                 <div class="mdl-layout-spacer"></div>
-                <img src="./img/logo_on.png" width="120px" alt="ON logo">
+                <img src="./img/logo_on.png" width="120" alt="ON logo">
                 <div class="mdl-layout-spacer"></div>
             </div>
 
@@ -114,11 +109,6 @@
                     <li>
                         <a href="https://www.linkedin.com/in/nicolas-orlandini-1b3871129/">
                             <i class="fa fa-linkedin"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-google-plus"></i>
                         </a>
                     </li>
                     <li>
@@ -142,6 +132,7 @@
                     </h1>
                     <div class="title-cadre">
                         <h2 class="title-activite">Création d'applications mobiles et web en Freelance</h2>
+                        <p class="siren">SIREN : 834 445 579</p>
                     </div>
                     <form action="#contact">
                         <button class="mdl-button contact mdl-js-button mdl-button--raised mdl-js-ripple-effect btn-orange" type="submit">
@@ -149,6 +140,53 @@
                         </button>
                     </form>
                 </div>
+            </div>
+            <div class="background background-dark-dark" id="pres">
+                <h3 class="sub subtitle">Présentation</h3>
+                <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--4-col">
+                        <i class="material-icons">call</i>
+                        <p class="pres-infos">
+                            <a class="pres-link" href="tel:0620703004">06 20 70 30 04</a>
+                        </p>
+                    </div>
+                    <div class="mdl-cell mdl-cell--4-col">
+                        <i class="material-icons">location_on</i>
+                        <p class="pres-infos">Nice, France</p>
+                    </div>
+                    <div class="mdl-cell mdl-cell--4-col">
+                        <i class="material-icons">mail_outline</i>
+                        <p class="pres-infos">
+                            <a class="pres-link" href="mailto:contact@orlandini.fr">contact@orlandini.fr</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--8-col justify">
+                        Je suis un jeune développeur, spécialisé dans le développement d'applications mobiles. 
+                        Je suis passionné par le monde de l'informatique depuis toujours. La mobilité me passionne 
+                        particulièrement depuis que j'ai eu mon premier smartphone Android. Je me suis donc tourné 
+                        vers une licence professionnelle spécialisée en Développement d'Applications Mobiles. 
+                        Cette formation m'a permis d'explorer la plupart des langages orientés mobilité et 
+                        d'acquérir de solides compétences dans ce domaine.
+                        <br>
+                        <br> 
+                        J'ai décidé de me lancer dans l'aventure de l'auto-entreprenariat car, pour moi, fournir un travail
+                        de qualité est indispensable et fait toute la différence. Mon statut me permet de m'investir totalement
+                        dans les projets que je réalise pour obtenir un résultat au plus proche de vos attentes.
+                    </div>
+                    
+                    <div class="mdl-cell mdl-cell--4-col pres-cv-txt">
+                        <div data-layout="mini" class="codeur-profile-widget"></div>
+                    </div>
+                </div>
+                <hr>
+                <p class="cv-title">Téléchargez mon CV</p>
+                <a href="./fichiers" download="CV_Orlandini_Nicolas.pdf">
+                    <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect btn-orange">
+                        <i class="material-icons">file_download</i>
+                    </button>
+                </a>
             </div>
             <div class="background" id="serv">
                 <h3 class="sub subtitle">Mes services</h3>
@@ -182,12 +220,12 @@
                                 <p class="services-text">Refonte graphique</p>
                                 <p class="justify">Vous disposez d'une application, cette dernière n'est plus assez moderne face aux 
                                 constantes évolutions du marché du mobile ? Je peux vous aider ! En réalisant une 
-                                nouvelle interface plus moderne est conviviale avec vous, votre application gagnera en 
+                                nouvelle interface plus moderne et conviviale avec vous, votre application gagnera en 
                                 notoriété et attirera de nouveaux clients.</p>
                             </div>
                             <div class="mdl-cell mdl-cell--4-col services-sur-mesure-cadre">
                                 <p class="services-text">Ajout de nouvelles fonctionnalités</p>
-                                <p class="justify">Vous disposez d'une application, vous envisagez d'ajouter une ou des nouvelles 
+                                <p class="justify">Vous disposez d'une application, vous envisagez d'ajouter une ou plusieurs 
                                 fonctionnalités pour répondre à un nouveau besoin ou gagner une nouvelle clientèle ? 
                                 Je peux réaliser un diagnostique de votre application afin de permettre l'ajout 
                                 d'éventuelles fonctionnalités ainsi que l'optimisation de votre application.</p>
@@ -225,52 +263,7 @@
                     </div>
                 </div>
             </div>
-            <div class="background background-dark-dark" id="pres">
-                <h3 class="sub subtitle">Présentation</h3>
-                <div class="mdl-grid">
-                    <div class="mdl-cell mdl-cell--4-col">
-                        <i class="material-icons">call</i>
-                        <p class="pres-infos">
-                            <a class="pres-link" href="tel:0620703004">06 20 70 30 04</a>
-                        </p>
-                    </div>
-                    <div class="mdl-cell mdl-cell--4-col">
-                        <i class="material-icons">location_on</i>
-                        <p class="pres-infos">Nice, France</p>
-                    </div>
-                    <div class="mdl-cell mdl-cell--4-col">
-                        <i class="material-icons">mail_outline</i>
-                        <p class="pres-infos">
-                            <a class="pres-link" href="mailto:contact@orlandini.fr">contact@orlandini.fr</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="mdl-grid">
-                    <div class="mdl-cell mdl-cell--8-col justify">
-                        Je suis un jeune développeur, spécialisé dans le développement d'applications mobiles. 
-                        Je suis passionné par le monde de l'informatique depuis toujours. La mobilité me passionne 
-                        particulièrement depuis que j'ai eu mon premier smartphone Android. Je me suis donc tourné 
-                        vers une licence professionnelle spécialisée en Développement d'Applications Mobiles. 
-                        Cette formation m'a permis d'explorer la plupart des langages orientés mobilité et 
-                        d'acquérir de solides compétences dans ce domaine.
-                        <br>
-                        <br> 
-                        J'ai décidé de me lancer dans l'aventure de l'auto-entreprenariat car, pour moi, fournir un travail
-                        de qualité est indispensable et fait toute la différence. Mon statut me permet de m'investir totalement
-                        dans les projets que je réalise pour obtenir un résultat au plus proche de vos attentes.
-                    </div>
-                    <div class="mdl-cell mdl-cell--4-col pres-cv-txt">
-                        <span>Téléchargez mon CV</span>
-                        <br>
-                        <br>
-                        <a href="./fichiers" download="CV_Orlandini_Nicolas.pdf">
-                            <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect btn-orange">
-                                <i class="material-icons">file_download</i>
-                            </button>
-                        </a>
-                    </div>
-                </div>
-            </div>
+            
             <div class="background background-dark" id="comp">
                 <h3 class="sub subtitle">Mes compétences</h3>
 
@@ -302,7 +295,7 @@
                 
                     <?php include_once 'contact.php'; ?>
             </div>
-        </div
+        </div>
     </main>
 
     <footer class="mdl-mega-footer customFooter">
@@ -323,12 +316,12 @@
                 </ul>
             </div>
 
-            <div class="mdl-mega-footer__drop-down-section">
+            <!--<div class="mdl-mega-footer__drop-down-section">
                 <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
                 <h3 class="mdl-mega-footer__heading">Projets réalisés</h3>
                 <ul class="mdl-mega-footer__link-list">
                 </ul>
-            </div>
+            </div>-->
 
             <div class="mdl-mega-footer__drop-down-section">
                 <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
@@ -362,16 +355,11 @@
                         </li>
                         <li>
                             <a href="#">
-                                <i class="fa fa-google-plus"></i>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#">
                                 <i class="fa fa-skype"></i>
                             </a>
                         </li>
                     </ul>
+                    <div data-layout="mini" class="codeur-profile-widget"></div>
                 </ul>
             </div>
         </div>
@@ -396,6 +384,15 @@
         </div>
     </footer>
 
+    <script>
+        (function() {
+            var script   = document.createElement('script');
+            script.src   = '//api.codeur.com/widgets/profile.js?k=IqIqEv_YS4jkUaS9';
+            script.async = true;
+            var entry = document.getElementsByTagName('script')[0];
+            entry.parentNode.insertBefore(script, entry);
+        })();
+    </script>
     <script src="https://www.google.com/recaptcha/api.js"></script>
     <script>
         $(window).scroll(function(){
