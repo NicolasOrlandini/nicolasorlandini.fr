@@ -28,7 +28,7 @@ if (isset($_POST["submit"])){
 
             //Recipients
             $mail->setFrom($_POST["email"],$_POST["gender"] . " " . strtoupper($_POST["nom"]) . " " . $_POST["prenom"]);
-            $mail->addAddress('dev.orlandini@outlook.com');     // Add a recipient
+            $mail->addAddress('contact@orlandini.fr');     // Add a recipient
 
             //Attachments
             $taille = count($_FILES['attachment']['name']);

@@ -51,10 +51,8 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-55C6TGX"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <a href="javascript:" id="return-to-top">
-        <button class="mdl-button mdl-js-button mdl-button--fab Back-to-top btn-orange">
-            <i class="material-icons colorButtonToTop">keyboard_arrow_up</i>
-        </button>
+    <a href="javascript:" id="return-to-top" class="mdl-button mdl-js-button mdl-button--fab Back-to-top btn-orange">
+        <i class="material-icons colorButtonToTop">keyboard_arrow_up</i>
     </a>
 
 
@@ -136,11 +134,9 @@
                         <h2 class="title-activite">Création d'applications mobiles et web en Freelance</h2>
                         <p class="siren">SIREN : 834 445 579</p>
                     </div>
-                    <form action="#contact">
-                        <button class="mdl-button contact mdl-js-button mdl-button--raised mdl-js-ripple-effect btn-orange" type="submit">
-                            Me contacter
-                        </button>
-                    </form>
+                    <a href="#contact" class="mdl-button contact mdl-js-button mdl-button--raised mdl-js-ripple-effect btn-orange">
+                        Me contacter
+                    </a>
                 </div>
             </div>
             <div class="background background-dark-dark" id="pres">
@@ -184,10 +180,9 @@
                 </div>
                 <hr>
                 <p class="cv-title">Téléchargez mon CV</p>
-                <a href="./fichiers" download="CV_Orlandini_Nicolas.pdf">
-                    <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect btn-orange">
+                <a href="./fichiers" download="CV_Orlandini_Nicolas.pdf"
+                     class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect btn-orange">
                         <i class="material-icons colorButtonToTop">file_download</i>
-                    </button>
                 </a>
             </div>
             <div class="background" id="serv">
