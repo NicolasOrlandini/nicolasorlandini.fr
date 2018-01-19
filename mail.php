@@ -73,9 +73,9 @@ if (isset($_POST["submit"])){
             var_dump($aChips);
             var_dump($plateforme.explode(' ', $plateforme));
 
-            /*if($mail->send()){
+            if($mail->send()){
                 return;
-            }*/
+            }
             /*$dir = opendir($uploaddir);
             while($file == readdir($dir)){
                 if(file_exists($file))
@@ -95,7 +95,7 @@ function createMail($civility, $person, $projectName, $textProject, $entreprise,
     $html = '';
 
     $html .= $civility . " " . $person . "<br><br>";
-    $projet = "<div style='text-align: center;'><span><u>" . $projectName . "</u></span><br><div style='text-align: center;'>" . $textProject ."</div></div><br>";
+    $projet = "<div style='text-align: center;'><span><u>" . $projectName . "</u></span><br><div style='text-align: center;'><br>" . $textProject ."</div></div><br>";
     $hr = "<br><hr><br>";
     $table = "<div style='width:100%;text-align:center'><div style='display:inline-block;'><table width='250' border='1'>".
         "<thead><td>PLATEFORMES</td><td>TECHNOLOGIES</td></thead></table></div></div>";
