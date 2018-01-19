@@ -31,15 +31,10 @@ function getFiles(){
     document.getElementById('TEXT_ID').value = liste.substr(1);
 }
 
-var nom = $("#nom");
-var prenom = $("#prenom");
+function enableSubmitButton(){
+    document.getElementById("submitButton").disabled = false;
+}
 
-
-/* Vérification du recaptcha */
-
-var verifyCallback = function (response) {
-    alert(response);
-};
 var widgetId1;
 var widgetId2;
 var onloadCallback = function () {

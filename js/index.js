@@ -169,3 +169,7 @@ window.onload = function () {
 		}
 	});
 };
+
+$(window).load(function () {
+    $('input[data-required=true]').attr('required', true);
+});

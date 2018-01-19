@@ -1,7 +1,7 @@
 <?php
 require_once 'mail.php';
 require_once 'recaptcha.php';
-$siteKey = '6LfZQ0AUAAAAAE_VuY8Ayl99Cjwzpj_kX6YbtsrC'; // votre clé publique
+$siteKey = '6LePnEEUAAAAAPKUymG3wPCSSjas6TTXEtxZCcXu'; // votre clé publique
 $secret = '6LfZQ0AUAAAAAApVJfXCQ9vBr67UK_Si1GKb1UbL'; // votre clé privée
 ?>
 <div class="mdl-grid portfolio-max-width portfolio-contact">
@@ -9,7 +9,7 @@ $secret = '6LfZQ0AUAAAAAApVJfXCQ9vBr67UK_Si1GKb1UbL'; // votre clé privée
         <?php require 'getCaptcha.php'; ?>
         <div class="container-civility requiredCivility">
             <label class="civility" for="civility">Civilité</label>
-            <div class="">
+            <div class="" aria-required="true">
                 <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect radiobutton"
                        for = "monsieur">
                     <input required type = "radio" id="monsieur" name="gender"
@@ -25,7 +25,7 @@ $secret = '6LfZQ0AUAAAAAApVJfXCQ9vBr67UK_Si1GKb1UbL'; // votre clé privée
             </div>
         </div><br>
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <input class="mdl-textfield__input" name="nom" pattern="[A-Z,a-z, ]*" type="text" id="nom">
+            <input required class="mdl-textfield__input" name="nom" pattern="[A-Z,a-z, ]*" type="text" id="nom">
             <label class="mdl-textfield__label" for="nom">Nom...</label>
             <span class="mdl-textfield__error">Lettres et espaces seulement</span>
         </div>
@@ -79,7 +79,7 @@ $secret = '6LfZQ0AUAAAAAApVJfXCQ9vBr67UK_Si1GKb1UbL'; // votre clé privée
             <label class="mdl-textfield__label" for="sujet">Sujet...</label>
         </div>
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <input class="mdl-textfield__input" name="company" type="text" id="company">
+            <input required class="mdl-textfield__input" name="company" type="text" id="company">
             <label class="mdl-textfield__label" for="company">Entreprise...</label>
         </div>
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-chipfield" id="demo-2">
@@ -98,8 +98,8 @@ $secret = '6LfZQ0AUAAAAAApVJfXCQ9vBr67UK_Si1GKb1UbL'; // votre clé privée
                 <input type="file" multiple name="attachment[]" id="uploaded_file" onchange="getFiles();" />
             </div>
         </div>
-        <div class="g-recaptcha" data-sitekey="<?php echo $siteKey; ?>"></div><br>
-        <button class="mdl-button contact mdl-js-button mdl-button--raised mdl-js-ripple-effect contact-send btnSend" name="submit" type="submit">
+        <div class="g-recaptcha" data-sitekey="6LePnEEUAAAAAPKUymG3wPCSSjas6TTXEtxZCcXu" data-callback="enableSubmitButton"></div><br>
+        <button id="submitButton" disabled class="mdl-button contact mdl-js-button mdl-button--raised mdl-js-ripple-effect contact-send btnSend" name="submit" type="submit">
             ENVOYER
         </button>
     </form>

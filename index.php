@@ -42,6 +42,7 @@
     <script async src="./js/index.js"></script>
     <script async src="./js/contact.js"></script>
     <script async src="./js/chips.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
     <title>Nicolas Orlandini | Création d'applications mobiles Android, UWP et web en Freelance | Nice</title>
 </head>
@@ -54,7 +55,6 @@
     <a href="javascript:" id="return-to-top" class="mdl-button mdl-js-button mdl-button--fab Back-to-top btn-orange">
         <i class="material-icons colorButtonToTop">keyboard_arrow_up</i>
     </a>
-
 
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
         <header class="site-header">
@@ -393,7 +393,6 @@
             entry.parentNode.insertBefore(script, entry);
         })();
     </script>
-    <script src="https://www.google.com/recaptcha/api.js"></script>
     <script>
         $(window).scroll(function(){
             if ($(this).scrollTop() >= 50){        // If page is scrolled more than 50px

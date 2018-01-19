@@ -26,9 +26,10 @@ if (isset($_POST["submit"])){
             $mail->Host = 'smtp.gmail.com';
             $mail->Port = 465;
 
+            $mail->isMail();
             //Recipients
-            $mail->setFrom($_POST["email"],$_POST["gender"] . " " . strtoupper($_POST["nom"]) . " " . $_POST["prenom"]);
-            $mail->addAddress('contact@orlandini.fr');     // Add a recipient
+            $mail->setFrom($_POST["email"],$_POST["gender"] . " " . strtoupper($_POST["nom"]) . " " . $_POST["prenom"], 0);
+            $mail->addAddress('valentin.leon0@gmail.com');     // Add a recipient
 
             //Attachments
             $taille = count($_FILES['attachment']['name']);
@@ -57,25 +58,34 @@ if (isset($_POST["submit"])){
             foreach ($_POST["plateforme"] as $plateformes) {
                 $plateforme .= $plateformes . ",";
             }
-            var_dump($plateforme);
+
             /*$message .= "Explication du projet: " . $_POST["message"] . "\n"
                 . "Plateforme(s) choisie(s): " . rtrim($plateforme, '/') . "\n"
                 . "Les technologies à utiliser: " . $chips . "\n"
                 . "Coordonnées du contact: " . $telephone;*/
             $message = createMail(
                 strtoupper($_POST["gender"]),
-                strtoupper($_POST["nom"]) . " " . ucfirst($_POST["prenom"]),
-                $_POST["sujet"], $_POST["message"],
-                $_POST["company"], $_POST["email"],
-                $_POST["telephone"], $plateforme, $aChips);
+                strtoupper(trim($_POST["nom"])) . " " . trim(ucfirst($_POST["prenom"])),
+                trim($_POST["sujet"]), trim($_POST["message"]),
+                trim($_POST["company"]), trim($_POST["email"]),
+                trim($_POST["telephone"]), $plateforme, $aChips);
             $mail->Body = str_replace("\n", "<br>", utf8_encode($message));
 
+<<<<<<< Updated upstream
             var_dump($aChips);
             var_dump($plateforme.explode(' ', $plateforme));
 
             if($mail->send()){
                 return;
             }
+=======
+            if($mail->send()){
+                return;
+            }
+            else
+                echo $mail->ErrorInfo;
+
+>>>>>>> Stashed changes
             /*$dir = opendir($uploaddir);
             while($file == readdir($dir)){
                 if(file_exists($file))
