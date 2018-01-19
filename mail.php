@@ -87,9 +87,6 @@ if (isset($_POST["submit"])){
         echo "Le message n'a pas pu être envoyé." . "<br>";
     }
 }
-/*else {
-    echo "<script>alert('Des champs obligatoires sont manquants')</script>";
-}*/
 
 function createMail($civility, $person, $projectName, $textProject, $entreprise, $email, $tel, $plateforme, $chips){
     $html = '';

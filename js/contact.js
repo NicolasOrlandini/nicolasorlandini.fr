@@ -31,6 +31,9 @@ function getFiles(){
     document.getElementById('TEXT_ID').value = liste.substr(1);
 }
 
+var nom = $("#nom");
+var prenom = $("#prenom");
+
 
 /* Vérification du recaptcha */
 
