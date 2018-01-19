@@ -1,4 +1,5 @@
 
+
 window.onload = function () {
     var andr = document.getElementById("pieChartAndroid");
     var ios = document.getElementById("pieChartiOS");
@@ -169,7 +170,3 @@ window.onload = function () {
 		}
 	});
 };
-
-$(window).load(function () {
-    $('input[data-required=true]').attr('required', true);
-});

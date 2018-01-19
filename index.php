@@ -31,6 +31,7 @@
     <link rel="stylesheet" href="./css/contact.css" />
     <link rel="stylesheet" href="./css/app.css" />
     <link rel="stylesheet" href="./css/chips.css">
+    <link rel="stylesheet" href="./css/jquery.toast.min.css">
     <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css'>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
@@ -43,6 +44,7 @@
     <script async src="./js/contact.js"></script>
     <script async src="./js/chips.js"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="./js/jquery.toast.min.js"></script>
 
     <title>Nicolas Orlandini | Création d'applications mobiles Android, UWP et web en Freelance | Nice</title>
 </head>

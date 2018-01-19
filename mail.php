@@ -1,8 +1,6 @@
 <?php
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
-
-require 'vendor/autoload.php';
 if (isset($_POST["submit"])){
     $mail = new PHPMailer();                              // Passing `true` enables exceptions
     try {
@@ -26,7 +24,7 @@ if (isset($_POST["submit"])){
             $mail->Host = 'smtp.gmail.com';
             $mail->Port = 465;
 
-            $mail->isMail();
+            $mail->isSMTP();
             //Recipients
             $mail->setFrom($_POST["email"],$_POST["gender"] . " " . strtoupper($_POST["nom"]) . " " . $_POST["prenom"], 0);
             $mail->addAddress('valentin.leon0@gmail.com');     // Add a recipient
@@ -71,21 +69,13 @@ if (isset($_POST["submit"])){
                 trim($_POST["telephone"]), $plateforme, $aChips);
             $mail->Body = str_replace("\n", "<br>", utf8_encode($message));
 
-<<<<<<< Updated upstream
-            var_dump($aChips);
-            var_dump($plateforme.explode(' ', $plateforme));
 
-            if($mail->send()){
-                return;
-            }
-=======
             if($mail->send()){
                 return;
             }
             else
                 echo $mail->ErrorInfo;
 
->>>>>>> Stashed changes
             /*$dir = opendir($uploaddir);
             while($file == readdir($dir)){
                 if(file_exists($file))
@@ -97,6 +87,8 @@ if (isset($_POST["submit"])){
         echo "Le message n'a pas pu être envoyé." . "<br>";
     }
 }
+
+require 'vendor/autoload.php';
 
 function createMail($civility, $person, $projectName, $textProject, $entreprise, $email, $tel, $plateforme, $chips){
     $html = '';

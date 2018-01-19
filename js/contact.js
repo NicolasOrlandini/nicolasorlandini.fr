@@ -1,7 +1,7 @@
-/*  */
+/* variables  */
 
 function ready(fn) {
-    if(document.readyState != 'loading') {
+    if(document.readyState !== 'loading') {
         fn();
     } else {
         document.addEventListener('DOMContentLoaded', fn);
@@ -31,9 +31,38 @@ function getFiles(){
     document.getElementById('TEXT_ID').value = liste.substr(1);
 }
 
+var nom = document.getElementById("nom");
+var prenom = document.getElementById("prenom");
+var tamerlemail = document.getElementById("Email");
+var telephone = document.getElementById("telephone");
+var sujet = document.getElementById("sujet");
+var note = document.getElementById("note");
+
+var a = [nom, prenom, tamerlemail, telephone, sujet, note];
+
 function enableSubmitButton(){
+
+    /*if (nom.value !== "" && prenom.value !== "" && tamerlemail.value !== "" && telephone.value !== "" && sujet.value !== "" && note.value !== "")
+        document.getElementById("submitButton").disabled = false;
+    else
+    {
+        a.forEach(function (e) {
+           if (e.value === ""){
+               e.required = true;
+           }
+        });
+    }*/
     document.getElementById("submitButton").disabled = false;
+
+    $.toast({
+        heading: 'Success',
+        text: 'Votre message a bien été envoyé',
+        icon: 'info',
+        loader: false,        // Change it to false to disable loader
+        loaderBg: '#00B0F0'  // To change the background
+    })
 }
+
 
 var widgetId1;
 var widgetId2;
