@@ -42,7 +42,6 @@
     <script async src="./js/index.js"></script>
     <script async src="./js/contact.js"></script>
     <script async src="./js/chips.js"></script>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
     <title>Nicolas Orlandini | Création d'applications mobiles Android, UWP et web en Freelance | Nice</title>
 </head>
@@ -394,6 +393,7 @@
             entry.parentNode.insertBefore(script, entry);
         })();
     </script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
     <script>
         $(window).scroll(function(){
             if ($(this).scrollTop() >= 50){        // If page is scrolled more than 50px

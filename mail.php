@@ -70,6 +70,9 @@ if (isset($_POST["submit"])){
                 $_POST["telephone"], $plateforme, $aChips);
             $mail->Body = str_replace("\n", "<br>", utf8_encode($message));
 
+            var_dump($aChips);
+            var_dump($plateforme.explode(' ', $plateforme));
+
             if($mail->send()){
                 return;
             }
