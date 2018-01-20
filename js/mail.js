@@ -5,7 +5,7 @@ $('#submitButton').click(function() {
         url: 'mail.php',
         type: 'POST',
         data: {
-            email: 'nicolas.orlandini@outlook.fr',
+            email: 'contact@orlandini.fr',
             message: 'coucou'
         },
         success: function(msg) {

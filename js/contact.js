@@ -55,11 +55,12 @@ function enableSubmitButton(){
     document.getElementById("submitButton").disabled = false;
 
     $.toast({
-        heading: 'Success',
+        heading: 'Succès',
         text: 'Votre message a bien été envoyé',
-        icon: 'info',
+        icon: 'success',
         loader: false,        // Change it to false to disable loader
-        loaderBg: '#00B0F0'  // To change the background
+        loaderBg: '#00B0F0',  // To change the background
+        position: 'bottom-center'
     })
 }
 

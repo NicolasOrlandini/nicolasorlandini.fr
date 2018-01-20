@@ -1,7 +1,7 @@
 <?php
 require_once 'mail.php';
 require_once 'recaptcha.php';
-$siteKey = '6LePnEEUAAAAAPKUymG3wPCSSjas6TTXEtxZCcXu'; // votre clé publique
+$siteKey = '6LfZQ0AUAAAAAE_VuY8Ayl99Cjwzpj_kX6YbtsrC'; // votre clé publique
 $secret = '6LfZQ0AUAAAAAApVJfXCQ9vBr67UK_Si1GKb1UbL'; // votre clé privée
 ?>
 <div class="mdl-grid portfolio-max-width portfolio-contact">
@@ -97,7 +97,7 @@ $secret = '6LfZQ0AUAAAAAApVJfXCQ9vBr67UK_Si1GKb1UbL'; // votre clé privée
                 <input type="file" multiple name="attachment[]" id="uploaded_file" onchange="getFiles();" />
             </div>
         </div>
-        <div class="g-recaptcha" data-sitekey="6LePnEEUAAAAAPKUymG3wPCSSjas6TTXEtxZCcXu" data-callback="enableSubmitButton"></div><br>
+        <div class="g-recaptcha" data-sitekey="6LfZQ0AUAAAAAE_VuY8Ayl99Cjwzpj_kX6YbtsrC" data-callback="enableSubmitButton"></div><br>
         <button id="submitButton" disabled class="mdl-button contact mdl-js-button mdl-button--raised mdl-js-ripple-effect contact-send btnSend" name="submit" type="submit">
             ENVOYER
         </button>

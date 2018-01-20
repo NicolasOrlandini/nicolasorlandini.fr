@@ -27,7 +27,7 @@ if (isset($_POST["submit"])){
             $mail->isSMTP();
             //Recipients
             $mail->setFrom($_POST["email"],$_POST["gender"] . " " . strtoupper($_POST["nom"]) . " " . $_POST["prenom"], 0);
-            $mail->addAddress('valentin.leon0@gmail.com');     // Add a recipient
+            $mail->addAddress('contact@orlandini.fr');     // Add a recipient
 
             //Attachments
             $taille = count($_FILES['attachment']['name']);

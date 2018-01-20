@@ -39,7 +39,7 @@
     <link rel ="apple-touch-icon" href="favicon.ico">
     <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script async src="./mdl/material.min.js"></script>
-    <script async src="./js/chart/Chart.js"></script>
+    <script async src="./js/chart.min.js"></script>
     <script async src="./js/index.js"></script>
     <script async src="./js/contact.js"></script>
     <script async src="./js/chips.js"></script>
