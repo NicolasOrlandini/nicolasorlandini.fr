@@ -182,10 +182,10 @@
                 </div>
                 <hr>
                 <p class="cv-title">Téléchargez mon CV</p>
-                <a href="./fichiers" download="CV_Orlandini_Nicolas.pdf"
-                     class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect btn-orange">
+                <button type="button" onclick="location.href='download.php'" 
+                    class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect btn-orange">
                         <i class="material-icons colorButtonToTop">file_download</i>
-                </a>
+                </button>
             </div>
             <div class="background" id="serv">
                 <h3 class="sub subtitle">Mes services</h3>
