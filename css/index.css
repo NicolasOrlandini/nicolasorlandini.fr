@@ -75,15 +75,27 @@ h5 {
 
 /************************** MENU **************************/
 
-nav>a{
+nav>a {
     color: rgb(55,71,79) !important;
     font-family: "Roboto" !important;
     font-weight: 250 !important;
     font-size: 1.30rem !important;
   }
 
-nav>a:hover{
+nav>a:hover {
     color: #008AB2 !important;
+}
+
+.menu-desktop {
+    display: inline-flex !important;
+}
+
+.menu-mobile {
+    display: none !important;
+}
+
+.menu_logo {
+    width: 180px;
 }
   
 /************************** TITLE **************************/
@@ -379,6 +391,24 @@ nav>a:hover{
     }
 }
 
+@media (max-width: 900px) {
+
+    /************************** MENU **************************/
+
+    .menu_logo {
+        width: 120px;
+    }
+
+    .menu-desktop {
+        display: none !important;
+    }
+
+    .menu-mobile {
+        display: inline-flex !important;
+    }
+}
+
+
 /* Les mobiles */
 @media screen and (max-width: 680px){
 
@@ -407,6 +437,13 @@ nav>a:hover{
         margin-top: -5px;
     }
     
+
+    /************************** MENU **************************/
+
+    .menu_logo {
+        width: 120px;
+    }
+
     /************************** TITLE **************************/
 
     .title-background {

@@ -60,12 +60,15 @@
 
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
         <header class="site-header">
-            <div class="mdl-layout__header-row mdl-layout--large-screen-only">
+
+            <div class="mdl-layout__header-row">
+                <div class="menu-mobile mdl-layout-spacer"></div>
                 <span class="site-header__title">
-                    <img src="./img/logo_on.png" width="180" alt="ON logo">
+                    <img class="menu_logo" src="./img/logo_on.png" alt="ON logo">
                 </span>
                 <div class="mdl-layout-spacer"></div>
-                <ul class="social-icons icon-circle icon-rotate list-unstyled list-inline">
+                
+                <ul class="menu-desktop social-icons icon-circle icon-rotate list-unstyled list-inline">
                     <li>
                         <a href="https://github.com/NicolasOrlandini">
                             <i class="fa fa-github"></i>
@@ -83,26 +86,18 @@
                     </li>
                 </ul>
             </div>
-            <div class="mdl-layout__header-row mdl-layout--large-screen-only">
+
+            <div class="mdl-layout__header-row">
                 <!-- Navigation -->
                 <div class="mdl-layout-spacer"></div>
-                <nav class="mdl-navigation">
+                <nav class="mdl-navigation menu-desktop">
                     <a class="mdl-navigation__link" href="#pres">Présentation</a>
                     <a class="mdl-navigation__link" href="#serv">Services</a>
                     <!--<a class="mdl-navigation__link" href="">Projets réalisés</a>-->
                     <a class="mdl-navigation__link" href="#contact">Me contacter</a>
                 </nav>
-                <div class="mdl-layout-spacer"></div>
-            </div>
-            <div class="mdl-layout__header-row mdl-layout--small-screen-only">
-                <div class="mdl-layout-spacer"></div>
-                <img src="./img/logo_on.png" width="120" alt="ON logo">
-                <div class="mdl-layout-spacer"></div>
-            </div>
 
-            <div class="mdl-layout__header-row mdl-layout--small-screen-only">
-                <div class="mdl-layout-spacer"></div>
-                <ul class="social-icons icon-circle icon-rotate list-unstyled list-inline">
+                <ul class="menu-mobile social-icons icon-circle icon-rotate list-unstyled list-inline">
                     <li>
                         <a href="https://github.com/NicolasOrlandini">
                             <i class="fa fa-github"></i>
