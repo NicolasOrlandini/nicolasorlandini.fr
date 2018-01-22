@@ -84,6 +84,16 @@
                             <i class="fa fa-skype"></i>
                         </a>
                     </li>
+                    <li>
+                        <a href="tel:0620703004">
+                            <i class="fa fa-phone"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:contact@orlandini.fr">
+                            <i class="fa fa-envelope"></i>
+                        </a>
+                    </li>
                 </ul>
             </div>
 
@@ -111,6 +121,16 @@
                     <li>
                         <a href="#">
                             <i class="fa fa-skype"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:0620703004">
+                            <i class="fa fa-phone"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:contact@orlandini.fr">
+                            <i class="fa fa-envelope"></i>
                         </a>
                     </li>
                 </ul>
