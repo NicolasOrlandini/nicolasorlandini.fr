@@ -44,6 +44,7 @@ if (isset($_POST["submit"])){
             $mail->setFrom($_POST["email"],$_POST["gender"] . " " . strtoupper($_POST["nom"]) . " " . $_POST["prenom"], 0);
             $mail->addAddress('valentin.leon0@gmail.com');     // Add a recipient
 
+            mkdir("./upload/", 777, true);
             //Attachments
             foreach ($_FILES['attachment']["error"] as $key => $error){
                 if ($error == UPLOAD_ERR_OK){
@@ -58,20 +59,17 @@ if (isset($_POST["submit"])){
             //Content
             $mail->isHTML(true);                                  // Set email format to HTML
             $mail->Subject = $_POST["sujet"];
-            $aChips = explode(' ', $_POST["demo-2"]);
             $message = "";
             $telephone = $_POST["telephone"];
+            $aChips = explode(",", $_POST["demo-2"]);
             $plateforme = "";
             $chips = "";
             foreach ($_POST["plateforme"] as $plateformes) {
                 $plateforme .= "<tr><td>" . $plateformes ."</td></tr>";
             }
             foreach ($aChips as $chip){
-                $chips .= "<tr><td>" . $chip . "</td></tr>";
+                $chips .= "<tr><td>" . trim($chip) . "</td></tr>";
             }
-
-
-
 
             $message = createMail(
                 strtoupper($_POST["gender"]),
@@ -83,24 +81,28 @@ if (isset($_POST["submit"])){
 
 
             if($mail->send()){
+                $dir = 'upload' . DIRECTORY_SEPARATOR;
+                $it = new RecursiveDirectoryIterator($dir, RecursiveDirectoryIterator::SKIP_DOTS);
+                $files = new RecursiveIteratorIterator($it,
+                    RecursiveIteratorIterator::CHILD_FIRST);
+                foreach($files as $file) {
+                    if ($file->isDir()){
+                        rmdir($file->getRealPath());
+                    } else {
+                        unlink($file->getRealPath());
+                    }
+                }
+                rmdir($dir);
                 return;
             }
             else
                 echo $mail->ErrorInfo;
 
-            /*$dir = opendir($uploaddir);
-            while($file == readdir($dir)){
-                if(file_exists($file))
-                    unlink($dir.$file);
-            }
-            closedir($dir);*/
         }
     } catch (Exception $e) {
         echo "Le message n'a pas pu être envoyé." . "<br>";
     }
 }
-
-require 'vendor/autoload.php';
 
 function createMail($civility, $person, $projectName, $textProject, $entreprise, $email, $tel, $plateforme, $chips){
     $html = '';
