@@ -1,5 +1,4 @@
 
-
 $('#submitButton').click(function() {
     $.ajax({
         url: 'mail.php',

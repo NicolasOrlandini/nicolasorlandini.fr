@@ -1,8 +1,22 @@
 <?php
+
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
+
+require 'vendor/autoload.php';
+
+/*$toast = "<script type='text/javascript'>$.toast({".
+        "heading: 'Succès',".
+        "text: 'Votre message a bien été envoyé',".
+        "icon: 'success',".
+        "loader: false,".
+        "loaderBg: '#00B0F0',".
+        "position: 'bottom-center'".
+    "})</script>";*/
+
+
 if (isset($_POST["submit"])){
-    $mail = new PHPMailer();                              // Passing `true` enables exceptions
+    $mail = new PHPMailer();
     try {
         if (isset($_POST["sujet"]) && isset($_POST["nom"]) && isset($_POST["prenom"]) && isset($_POST["message"]) && isset($_POST["gender"])
             && isset($_POST["demo-2"]) && isset($_POST["telephone"]) && !empty($_POST["plateforme"]) && isset($_POST["company"])
@@ -17,6 +31,7 @@ if (isset($_POST["submit"])){
                     'allow_self_signed' => true
                 )
             );
+            $mail->CharSet  = "UTF-8";
             $mail->SMTPAuth = true;                               // Enable SMTP authentication
             $mail->Username = 'corp.no@gmail.com';                 // SMTP username
             $mail->Password = 'c0R|>0r4t1oN';                           // SMTP password
@@ -27,21 +42,15 @@ if (isset($_POST["submit"])){
             $mail->isSMTP();
             //Recipients
             $mail->setFrom($_POST["email"],$_POST["gender"] . " " . strtoupper($_POST["nom"]) . " " . $_POST["prenom"], 0);
-            $mail->addAddress('contact@orlandini.fr');     // Add a recipient
+            $mail->addAddress('valentin.leon0@gmail.com');     // Add a recipient
 
             //Attachments
-            $taille = count($_FILES['attachment']['name']);
-            if ($taille > 0) {
-                for ($i=0; $i<$taille; $i++){
-                    $tmpFilePath = $_FILES['attachment']['tmp_name'][$i];
-                    if ($tmpFilePath != ""){
-                        //Setup our new file path
-                        $newFilePath = "./uploads/" . $_FILES['attachment']['name'][$i];
-
-                        //Upload the file into the temp dir
-                        if(move_uploaded_file($tmpFilePath, $newFilePath)) {
-                            $mail -> addattachment($newFilePath, basename($_FILES["attachment"]["name"][$i]), "base64", $_FILES["attachment"]["type"][$i]);
-                        }
+            foreach ($_FILES['attachment']["error"] as $key => $error){
+                if ($error == UPLOAD_ERR_OK){
+                    $tmp_name = $_FILES["attachment"]["tmp_name"][$key];
+                    $name = basename($_FILES["attachment"]["name"][$key]);
+                    if(move_uploaded_file($tmp_name, "./upload/$name")){
+                        $mail->addAttachment("./upload/$name", basename($_FILES["attachment"]["name"][$key]));
                     }
                 }
             }
@@ -56,6 +65,8 @@ if (isset($_POST["submit"])){
             foreach ($_POST["plateforme"] as $plateformes) {
                 $plateforme .= $plateformes . ",";
             }
+
+
 
             /*$message .= "Explication du projet: " . $_POST["message"] . "\n"
                 . "Plateforme(s) choisie(s): " . rtrim($plateforme, '/') . "\n"

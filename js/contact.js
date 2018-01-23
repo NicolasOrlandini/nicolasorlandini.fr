@@ -1,5 +1,7 @@
 /* variables  */
 
+
+
 function ready(fn) {
     if(document.readyState !== 'loading') {
         fn();
@@ -53,16 +55,17 @@ function enableSubmitButton(){
         });
     }*/
     document.getElementById("submitButton").disabled = false;
-
-    $.toast({
-        heading: 'Succès',
-        text: 'Votre message a bien été envoyé',
-        icon: 'success',
-        loader: false,        // Change it to false to disable loader
-        loaderBg: '#00B0F0',  // To change the background
-        position: 'bottom-center'
-    })
 }
+
+/*
+var nom = $("#nom");
+var prenom = $("#prenom");
+
+$("#submitButton").click(function () {
+    if (nom.val() === null || nom.isEmpty())
+        nom.addClass("is-invalid");
+
+});*/
 
 
 var widgetId1;
