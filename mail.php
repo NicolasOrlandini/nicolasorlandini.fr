@@ -62,22 +62,23 @@ if (isset($_POST["submit"])){
             $message = "";
             $telephone = $_POST["telephone"];
             $plateforme = "";
+            $chips = "";
             foreach ($_POST["plateforme"] as $plateformes) {
-                $plateforme .= $plateformes . ",";
+                $plateforme .= "<tr><td>" . $plateformes ."</td></tr>";
+            }
+            foreach ($aChips as $chip){
+                $chips .= "<tr><td>" . $chip . "</td></tr>";
             }
 
 
 
-            /*$message .= "Explication du projet: " . $_POST["message"] . "\n"
-                . "Plateforme(s) choisie(s): " . rtrim($plateforme, '/') . "\n"
-                . "Les technologies à utiliser: " . $chips . "\n"
-                . "Coordonnées du contact: " . $telephone;*/
+
             $message = createMail(
                 strtoupper($_POST["gender"]),
                 strtoupper(trim($_POST["nom"])) . " " . trim(ucfirst($_POST["prenom"])),
                 trim($_POST["sujet"]), trim($_POST["message"]),
                 trim($_POST["company"]), trim($_POST["email"]),
-                trim($_POST["telephone"]), $plateforme, $aChips);
+                trim($_POST["telephone"]), $plateforme, $chips);
             $mail->Body = str_replace("\n", "<br>", utf8_encode($message));
 
 
@@ -104,18 +105,18 @@ require 'vendor/autoload.php';
 function createMail($civility, $person, $projectName, $textProject, $entreprise, $email, $tel, $plateforme, $chips){
     $html = '';
 
-    $html .= $civility . " " . $person . "<br><br>";
+    $html .= $civility . "&nbsp;" . $person . "<br><br>";
     $projet = "<div style='text-align: center;'><span><u>" . $projectName . "</u></span><br><div style='text-align: center;'><br>" . $textProject ."</div></div><br>";
     $hr = "<br><hr><br>";
-    $table = "<div style='width:100%;text-align:center'><div style='display:inline-block;'><table width='250' border='1'>".
-        "<thead><td>PLATEFORMES</td><td>TECHNOLOGIES</td></thead></table></div></div>";
-
-
+    $tablePlateforme = "<div style='display:inline-block;'><table width='250' border='1'>".
+        "<thead><td>PLATEFORMES</td></thead>" . $plateforme . "</table></div>";
+    $tableTechnologie = "<div style='display: inline-block;'><table width='250' border='1'>".
+        "<thead><td>TECHNOLOGIES</td></thead>" . $chips . "</table></div>";
 
     $contact = "<div style='position:absolute;width:100%'><div style='vertical-align:middle;padding-bottom:5px;text-align:center;'><br><span>".
                 "<u>CONTACT</u></span><br></div><br>Entreprise: " . $entreprise . "<br> E-mail: " . $email . "<br> Tel: " . $tel ." </div>";
 
-    $html .= $projet . $hr . $table . $hr . $contact;
+    $html .= $projet . $hr . "<div style='width:100%;text-align:center;float: left;'>" . $tablePlateforme . $tableTechnologie . "</div>" . $hr . $contact;
 
 
     return $html;
