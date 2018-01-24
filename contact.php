@@ -99,7 +99,7 @@
                 <input type="file" multiple name="attachment[]" id="uploaded_file" onchange="getFiles();" />
             </div>
         </div>
-        <div class="g-recaptcha" data-sitekey="6LePnEEUAAAAAPKUymG3wPCSSjas6TTXEtxZCcXu" data-callback="enableSubmitButton"></div><br>
+        <div class="g-recaptcha" data-sitekey="6LfZQ0AUAAAAAE_VuY8Ayl99Cjwzpj_kX6YbtsrC" data-callback="enableSubmitButton"></div><br>
         <button id="submitButton" disabled class="mdl-button contact mdl-js-button mdl-button--raised mdl-js-ripple-effect contact-send btnSend" name="submit" type="submit">
             ENVOYER
         </button>
