@@ -422,6 +422,9 @@ nav>a:hover {
         margin-top: -5px;
     }
     
+    h1 {
+        line-height: 1.15;
+    }
 
     /************************** MENU **************************/
 
@@ -437,7 +440,10 @@ nav>a:hover {
 
     .title {
         padding: 18px;
-        padding-top: 70px;
+        padding-bottom: 10px;
+        padding-left: 18px;
+        padding-right: 18px;
+        padding-top: 60px;
     }
 
     .title-prenom{
@@ -452,7 +458,7 @@ nav>a:hover {
 
     .title-cadre {
         padding: 10px;
-        width: 90%;
+        width: 80%;
     }
 
     .title-activite {
@@ -461,6 +467,10 @@ nav>a:hover {
 
     .siren {
         font-size: 1em;
+    }
+
+    #intro {
+        padding: 40px 0 0 0;
     }
 
     /************************** PRESENTATION **************************/
