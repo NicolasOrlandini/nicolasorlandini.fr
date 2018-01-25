@@ -46,7 +46,11 @@
     <script async src="./js/chips.js"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script src="./js/jquery.toast.min.js"></script>
-
+    <script src="./js/jquery.scrollTo-1.4.3.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.parallax-1.1.js"></script>
+    <script src="./js/jquery.easing.1.3.js"></script>
+    <script src="./js/jquery.scrollorama.js"></script>
+    <script src="./js/jquery.scrolldeck.js"></script>
     <title>Nicolas Orlandini | Création d'applications mobiles Android, UWP et web en Freelance | Nice</title>
 </head>
 
@@ -105,7 +109,7 @@
                 <div class="mdl-layout-spacer"></div>
                 <nav class="mdl-navigation menu-desktop">
                     <a class="mdl-navigation__link" href="#pres">Présentation</a>
-                    <a class="mdl-navigation__link" href="#serv">Services</a>
+                    <a class="mdl-navigation__link" href="#serv">Prestations</a>
                     <!--<a class="mdl-navigation__link" href="">Projets réalisés</a>-->
                     <a class="mdl-navigation__link" href="#contact">Me contacter</a>
                 </nav>
@@ -144,8 +148,8 @@
 
     <main>
         <div class="page-content">
-            <div class="blur title-background">
-                <div class="content">
+            <div id="intro" class="slide">
+                <div class="story">
                     <h1 class="title">
                         <span class="title-prenom">Nicolas</span>
                         <span class="title-nom">ORLANDINI</span>
@@ -206,10 +210,10 @@
                 </button>
             </div>
             <div class="background" id="serv">
-                <h3 class="sub subtitle">Mes services</h3>
+                <h3 class="sub subtitle">Mes prestations</h3>
                 <div class="mdl-grid">
                     <div class="mdl-cell mdl-cell--4-col">
-                        <h3 class="sub services-title">Des applications sur-mesure</h3>
+                        <p class="sub services-title">Des applications sur-mesure</p>
                         <a style="text-decoration:none;cursor:default;" href="#">
                             <img class="services-sur-mesure-title-img"  src="./img/sur_mesure.svg"  alt="sur mesure" oncontextmenu="return false"/>
                         </a>
@@ -252,7 +256,7 @@
                         </div>
                     </div>
                     <div class="mdl-cell mdl-cell--4-col">
-                        <h3 class="sub services-title">Une nouvelle vie pour vos applications</h3>
+                        <p class="sub services-title">Une nouvelle vie pour vos applications</p>
                     </div>
                 </div>
                 <div class="plateforme-cadre">
@@ -316,10 +320,11 @@
                     </li>
                 </ul>
             </div>
-            <div class="background contact-background" id="contact">
-                <h3 class="sub subtitle">Me contacter</h3>
-                
+            <div class="slide" id="contact">
+                <div class="story">
+                    <h3 class="sub subtitle">Me contacter</h3>
                     <?php include_once 'contact.php'; ?>
+                </div>
             </div>
         </div>
     </main>
@@ -335,9 +340,6 @@
                     </li>
                     <li>
                         <a class="footer-link" href="#comp">Compétences</a>
-                    </li>
-                    <li>
-                        <a class="footer-link" href="#">Formation</a>
                     </li>
                 </ul>
             </div>
@@ -417,6 +419,34 @@
     </footer>
 
     <script>
+        
+        // PARALLAX
+        $(document).ready(function(){
+            //$('#nav').localScroll(800);
+            
+            RepositionNav();
+            
+            $(window).resize(function(){
+                RepositionNav();
+            });	
+            
+            //.parallax(xPosition, adjuster, inertia, outerHeight) options:
+            //xPosition - Horizontal position of the element
+            //adjuster - y position to start from
+            //inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
+            //outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
+            $('#intro').parallax("50%", 0, 0.1, true);
+            $('#contact').parallax("50%", 5000, 0.1, true);
+            $('.bg').parallax("50%", 2500, 0.4, true);
+            
+            var deck = new $.scrolldeck({
+                slides: '.slide',
+                buttons: '#nav li a',
+                easing: 'easeInOutExpo'
+            });
+
+        })
+        // WIDGET CODEUR
         (function() {
             var script   = document.createElement('script');
             script.src   = '//api.codeur.com/widgets/profile.js?k=IqIqEv_YS4jkUaS9';
@@ -424,8 +454,8 @@
             var entry = document.getElementsByTagName('script')[0];
             entry.parentNode.insertBefore(script, entry);
         })();
-    </script>
-    <script>
+
+        // BUTTON BACK TO TOP
         $(window).scroll(function(){
             if ($(this).scrollTop() >= 50){        // If page is scrolled more than 50px
                 $('#return-to-top').fadeIn(200);    // Fade in the arrow
@@ -438,6 +468,6 @@
                 scrollTop : 0                       // Scroll to top of body
             }, 500)
         });
-    </script>
+	</script>
 </body>
 </html>

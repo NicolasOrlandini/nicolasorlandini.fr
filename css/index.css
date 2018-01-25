@@ -107,49 +107,39 @@ nav>a:hover {
     padding-bottom: 90px;
 }
 
-.title-background {
-    background: url(../img/keyboard.jpg) no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
+#intro {
+    background: url(../img/intro-background.png) 50% -75px no-repeat fixed;
+    color: white;
+    margin: 0 auto;
+    padding: 160px 0 0 0;
     text-align: center;
-    padding: 40px;
-    min-height: 100%;
 }
-  
-.title-background::before {
-    content: "";
-    display: block;
-    -webkit-filter: blur(1px) brightness(0.5);
-    -moz-filter: blur(1px) brightness(0.5);
-    -ms-filter: blur(1px) brightness(0.5);
-    -o-filter: blur(1px) brightness(0.5);
-    filter: blur(1px) brightness(0.5);
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    background: inherit;
-    z-index: 0;
+
+.story {
+    margin: 0 auto;
+    overflow: auto;
+    z-index: 10;
+    padding-bottom: 100px;
 }
 
 .title-prenom{
     font-size: 85px;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 .title-nom{
     font-size: 90px;
-    font-weight: 280;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.747);
 }
 
 .title {
     font-family: "Roboto","Helvetica","Arial",sans-serif;
     color: whitesmoke;
-    padding: 30px;
-    padding-top: 150px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 50px;
+    padding-bottom: 30px;
  }
   
 .title-cadre {
@@ -285,17 +275,12 @@ nav>a:hover {
 
 /************************** CONTACT **************************/
 
-.contact-background {
-    background: url(../img/lightbulb.svg) no-repeat;
+#contact {
+    background: url(../img/lightbulb.svg) 50% 0px no-repeat fixed;
     background-color: #dee2e4;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
-    text-align: center;
+    margin: 0 auto;
     padding: 40px;
-    /*opacity: 0.7;
-    filter: alpha(opacity=70); /* For IE8 and earlier */
+    text-align: center;
 }
 
 .contact{
@@ -412,7 +397,7 @@ nav>a:hover {
 /* Les mobiles */
 @media screen and (max-width: 680px){
 
-    .contact-background {
+    #contact {
         background-size: auto !important;
     }
 }
