@@ -419,7 +419,6 @@
     </footer>
 
     <script>
-        
         // PARALLAX
         $(document).ready(function(){
             //$('#nav').localScroll(800);
@@ -446,15 +445,8 @@
             });
 
         })
-        // WIDGET CODEUR
-        (function() {
-            var script   = document.createElement('script');
-            script.src   = '//api.codeur.com/widgets/profile.js?k=IqIqEv_YS4jkUaS9';
-            script.async = true;
-            var entry = document.getElementsByTagName('script')[0];
-            entry.parentNode.insertBefore(script, entry);
-        })();
-
+    </script>
+    <script>
         // BUTTON BACK TO TOP
         $(window).scroll(function(){
             if ($(this).scrollTop() >= 50){        // If page is scrolled more than 50px
@@ -468,6 +460,17 @@
                 scrollTop : 0                       // Scroll to top of body
             }, 500)
         });
-	</script>
+    </script>
+
+    <script> 
+        // WIDGET CODEUR
+        (function() { 
+            var script   = document.createElement('script'); 
+            script.src   = '//api.codeur.com/widgets/profile.js?k=IqIqEv_YS4jkUaS9'; 
+            script.async = true; 
+            var entry = document.getElementsByTagName('script')[0]; 
+            entry.parentNode.insertBefore(script, entry); 
+        })(); 
+    </script> 
 </body>
 </html>
