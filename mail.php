@@ -42,7 +42,7 @@ if (isset($_POST["submit"])){
             $mail->isSMTP();
             //Recipients
             $mail->setFrom($_POST["email"],$_POST["gender"] . " " . strtoupper($_POST["nom"]) . " " . $_POST["prenom"], 0);
-            $mail->addAddress('contact.orlandini@orlandini.fr');     // Add a recipient
+            $mail->addAddress('contact@orlandini.fr');     // Add a recipient
 
             mkdir("./upload/", 777, true);
             //Attachments

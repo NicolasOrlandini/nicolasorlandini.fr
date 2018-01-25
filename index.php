@@ -24,7 +24,8 @@
     <meta name="description" content="Vous avez une idée de projet d'application mobile Android ou Windows 10 Mobile ? Vous êtes sur Nice ? Alors je peux vous aider !">
     <meta name="keywords" content="Android, freelance, UWP, mobile, Nice, Développement mobile, Nicolas Orlandini, Orlandini, développeur mobile Nice, développeur android Nice, création application android" />
     <meta name="author" content="Nicolas Orlandini">
-    <meta name="copyright" content="© Nicolas Orlandini - 2017-2018" />   
+    <meta name="copyright" content="© Nicolas Orlandini - 2017-2018" />
+    <meta HTTP-EQUIV="imagetoolbar" content="no">
     <link rel="stylesheet" href="./mdl/material.min.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/social.css">
@@ -64,7 +65,9 @@
             <div class="mdl-layout__header-row">
                 <div class="menu-mobile mdl-layout-spacer"></div>
                 <span class="site-header__title">
-                    <img class="menu_logo" src="./img/logo_on.png" alt="ON logo">
+                    <a style="text-decoration:none;cursor:default;" href="#">
+                        <img class="menu_logo" src="./img/logo_on.png" alt="ON logo"  oncontextmenu="return false">
+                    </a>
                 </span>
                 <div class="mdl-layout-spacer"></div>
                 
@@ -207,7 +210,9 @@
                 <div class="mdl-grid">
                     <div class="mdl-cell mdl-cell--4-col">
                         <h3 class="sub services-title">Des applications sur-mesure</h3>
-                        <img class="services-sur-mesure-title-img"  src="./img/sur_mesure.svg"  alt="sur mesure" />
+                        <a style="text-decoration:none;cursor:default;" href="#">
+                            <img class="services-sur-mesure-title-img"  src="./img/sur_mesure.svg"  alt="sur mesure" oncontextmenu="return false"/>
+                        </a>
                         <p>Grâce à mon expertise nous pouvons ensemble aboutir à la meilleure solution selon vos besoins.</p>
                     </div>
                     <div class="mdl-cell mdl-cell--8-col background-dark-dark">
@@ -254,21 +259,29 @@
                     <h4>Plateformes</h4>
                     <div class="mdl-grid">
                         <div class="mdl-cell mdl-cell--3-col services-plateformes-cadre">
-                            <img class="services-img" src="./img/android_logo_2.png" alt="Android logo">
+                            <a style="text-decoration:none;cursor:default;" href="#">
+                                <img class="services-img" src="./img/android_logo_2.png" alt="Android logo" oncontextmenu="return false">
+                            </a>
                             <p class="services-text">Android</p>
                             <p>Compatible smartphones et tablettes Android (JAVA)</p>
                         </div>
                         <div class="mdl-cell mdl-cell--3-col services-plateformes-cadre">
-                            <img class="services-img" src="./img/Apple_Computer_Logo_rainbow.png" alt="Apple logo">
+                            <a style="text-decoration:none;cursor:default;" href="#">
+                                <img class="services-img" src="./img/Apple_Computer_Logo_rainbow.png" alt="Apple logo" oncontextmenu="return false">
+                            </a>
                             <p class="services-text">iOS</p>
                         </div>
                         <div class="mdl-cell mdl-cell--3-col services-plateformes-cadre">
-                            <img class="services-img" src="./img/windows_logo.png" alt="C# logo">
+                            <a style="text-decoration:none;cursor:default;" href="#">
+                                <img class="services-img" src="./img/windows_logo.png" alt="C# logo"  oncontextmenu="return false">
+                            </a>
                             <p class="services-text">UNIVERSAL WINDOWS PLATFORM</p>
                             <p>Compatible Windows 10 Mobile et Windows 10 PC et Tablettes</p>
                         </div>
                         <div class="mdl-cell mdl-cell--3-col services-plateformes-cadre">
-                            <img class="services-img" src="./img/" alt="outils logo">
+                            <a style="text-decoration:none;cursor:default;" href="#">
+                                <img class="services-img" src="./img/" alt="outils logo" oncontextmenu="return false">
+                            </a>
                             <p class="services-text">Outils associés aux applications</p>
                             <p>API REST JAVA</p>
                             <p>Interface d'administation</p>
@@ -383,7 +396,9 @@
         <div class="mdl-mini-footer divDown">
             <ul class="list-unstyled">
                 <li class="center-footer">
-                    <img class="footer-logo" alt="ON-logo" src="./img/logo_mini.png"/>
+                    <a style="text-decoration:none;cursor:default;" href="#">
+                        <img class="footer-logo" alt="ON-logo" src="./img/logo_mini.png" oncontextmenu="return false"/>
+                    </a>
                 </li>
                 <li>
                     <p class="mdl-logo center-footer">© Nicolas ORLANDINI</p>
