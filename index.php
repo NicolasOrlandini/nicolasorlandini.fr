@@ -45,12 +45,6 @@
     <script async src="./js/contact.js"></script>
     <script async src="./js/chips.js"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <script src="./js/jquery.toast.min.js"></script>
-    <script src="./js/jquery.scrollTo-1.4.3.1.min.js"></script>
-    <script type="text/javascript" src="js/jquery.parallax-1.1.js"></script>
-    <script src="./js/jquery.easing.1.3.js"></script>
-    <script src="./js/jquery.scrollorama.js"></script>
-    <script src="./js/jquery.scrolldeck.js"></script>
     <title>Nicolas Orlandini | Création d'applications mobiles Android, UWP et web en Freelance | Nice</title>
 </head>
 
@@ -63,7 +57,7 @@
         <i class="material-icons colorButtonToTop">keyboard_arrow_up</i>
     </a>
 
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <div class="mdl-layout--fixed-header">
         <header class="site-header">
 
             <div class="mdl-layout__header-row">
@@ -150,9 +144,9 @@
         <div class="page-content">
             <div id="intro" class="slide">
                 <div class="story">
-                    <h1 class="title">
-                        <span class="title-prenom">Nicolas</span>
-                        <span class="title-nom">ORLANDINI</span>
+                    <h1 class="title" >
+                        <span id="prenom" class="title-prenom">Nicolas</span>
+                        <span id="nom" class="title-nom">ORLANDINI</span>
                     </h1>
                     <div class="title-cadre">
                         <h2 class="title-activite">Création d'applications mobiles et web en Freelance</h2>
@@ -418,6 +412,14 @@
         </div>
     </footer>
 
+    <script src="./js/jquery.toast.min.js"></script>
+    <script src="./js/jquery.scrollTo-1.4.3.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.parallax-1.1.js"></script>
+    <script src="./js/jquery.easing.1.3.js"></script>
+    <script src="./js/jquery.scrollorama.js"></script>
+    <script src="./js/jquery.scrolldeck.js"></script>
+	<script src="./js/jquery.shuffleLetters.js"></script>
+    <script src="./js/title.js"></script>
     <script>
         // PARALLAX
         $(document).ready(function(){
