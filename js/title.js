@@ -1,6 +1,6 @@
 
 
-	var intro = $("#intro")
+	var intro = $("#title")
 	nom = $('#nom')
 	prenom = $('#prenom'); 
 $(function(){

@@ -100,25 +100,33 @@ nav>a:hover {
   
 /************************** TITLE **************************/
 
-.content {
-    position: relative;
-    z-index: 10;
-    padding-top: 60px;
-    padding-bottom: 90px;
+.title-page {
+    padding: 130px 0 0 0;
+    text-align: center;
+    top: 0;
+    left: 0;
+    background-color: #4487b7;
 }
 
-#intro {
-    background: url(../img/intro-background.png) 50% -75px no-repeat fixed;
-    color: white;
-    margin: 0 auto;
-    padding: 160px 0 0 0;
-    text-align: center;
+#particles-js {
+    position: absolute;
+    display: block;
+    top: 130px;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+.story-title {
+    width: 100%;
+    padding-bottom: 100px;
+    z-index: 10;
 }
 
 .story {
     margin: 0 auto;
     overflow: auto;
-    z-index: 10;
     padding-bottom: 100px;
 }
 
@@ -141,6 +149,7 @@ nav>a:hover {
     padding-top: 50px;
     padding-bottom: 30px;
     height: 110px;
+    z-index: 100;
  }
   
 .title-cadre {
@@ -303,6 +312,7 @@ nav>a:hover {
     padding-bottom: 15px;
     padding-left: 10px;
     padding-right: 10px;
+    z-index: 99;
 }
 
 .contact-send{
@@ -470,7 +480,7 @@ nav>a:hover {
         font-size: 1em;
     }
 
-    #intro {
+    #title-page {
         padding: 40px 0 0 0;
     }
 

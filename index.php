@@ -38,6 +38,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
     <link rel ="icon" type="image/png" href="favicon.ico" >
     <link rel ="apple-touch-icon" href="favicon.ico">
+    <script src="./js/particles.min.js"></script>
+    <script src="./js/app.js"></script>
     <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script async src="./mdl/material.min.js"></script>
     <script async src="./js/chart.min.js"></script>
@@ -142,8 +144,8 @@
 
     <main>
         <div class="page-content">
-            <div id="intro" class="slide">
-                <div class="story">
+            <div class="title-page">
+                <div class="story-title">
                     <h1 class="title" >
                         <span id="prenom" class="title-prenom">Nicolas</span>
                         <span id="nom" class="title-nom">ORLANDINI</span>
@@ -156,6 +158,7 @@
                         Me contacter
                     </a>
                 </div>
+                <div id="particles-js"></div>
             </div>
             <div class="background background-dark-dark" id="pres">
                 <h3 class="sub subtitle">Présentation</h3>
