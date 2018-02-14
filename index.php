@@ -31,15 +31,13 @@
     <link rel="stylesheet" href="./css/social.css">
     <link rel="stylesheet" href="./css/contact.css" />
     <link rel="stylesheet" href="./css/app.css" />
-    <link rel="stylesheet" href="./css/chips.css">
-    <link rel="stylesheet" href="./css/jquery.toast.min.css">
-    <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css'>
+    <link async rel="stylesheet" href="./css/chips.css">
+    <link async rel="stylesheet" href="./css/jquery.toast.min.css">
+    <link async rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css'>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
     <link rel ="icon" type="image/png" href="favicon.ico" >
     <link rel ="apple-touch-icon" href="favicon.ico">
-    <script src="./js/particles.min.js"></script>
-    <script src="./js/app.js"></script>
     <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script async src="./mdl/material.min.js"></script>
     <script async src="./js/chart.min.js"></script>
@@ -160,28 +158,28 @@
                 </div>
                 <div id="particles-js"></div>
             </div>
-            <div class="background background-dark-dark" id="pres">
-                <h3 class="sub subtitle">Présentation</h3>
+            <div class="background background-dark-dark clic" id="pres">
+                <h3 class="sub subtitle clic">Présentation</h3>
                 <div class="mdl-grid">
-                    <div class="mdl-cell mdl-cell--4-col">
+                    <div class="mdl-cell mdl-cell--4-col clic">
                         <i class="material-icons">call</i>
                         <p class="pres-infos">
                             <a class="pres-link" href="tel:0620703004">06 20 70 30 04</a>
                         </p>
                     </div>
-                    <div class="mdl-cell mdl-cell--4-col">
+                    <div class="mdl-cell mdl-cell--4-col clic">
                         <i class="material-icons">location_on</i>
                         <p class="pres-infos">Nice, France</p>
                     </div>
-                    <div class="mdl-cell mdl-cell--4-col">
+                    <div class="mdl-cell mdl-cell--4-col clic">
                         <i class="material-icons">mail_outline</i>
                         <p class="pres-infos">
                             <a class="pres-link" href="mailto:contact@orlandini.fr">contact@orlandini.fr</a>
                         </p>
                     </div>
                 </div>
-                <div class="mdl-grid">
-                    <div class="mdl-cell mdl-cell--8-col justify">
+                <div class="mdl-grid clic">
+                    <div class="mdl-cell mdl-cell--8-col justify clic">
                         Je suis un jeune développeur, spécialisé dans le développement d'applications mobiles. 
                         Je suis passionné par le monde de l'informatique depuis toujours. La mobilité me passionne 
                         particulièrement depuis que j'ai eu mon premier smartphone Android. Je me suis donc tourné 
@@ -195,7 +193,7 @@
                         dans les projets que je réalise pour obtenir un résultat au plus proche de vos attentes.
                     </div>
                     
-                    <div class="mdl-cell mdl-cell--4-col pres-cv-txt">
+                    <div class="mdl-cell mdl-cell--4-col pres-cv-txt clic">
                         <div data-layout="mini" class="codeur-profile-widget"></div>
                     </div>
                 </div>
@@ -415,6 +413,8 @@
         </div>
     </footer>
 
+    <script src="./js/particles.min.js"></script>
+    <script src="./js/app.js"></script>
     <script src="./js/jquery.toast.min.js"></script>
     <script src="./js/jquery.scrollTo-1.4.3.1.min.js"></script>
     <script type="text/javascript" src="js/jquery.parallax-1.1.js"></script>

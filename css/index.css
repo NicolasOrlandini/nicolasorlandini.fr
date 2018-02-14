@@ -73,6 +73,10 @@ h5 {
     font-size: 50px;
 }
 
+.clic {
+    z-index: 99;
+}
+
 /************************** MENU **************************/
 
 nav>a {
@@ -113,7 +117,6 @@ nav>a:hover {
     display: block;
     top: 130px;
     left: 0;
-    z-index: 0;
     width: 100%;
     height: 100%;
   }
@@ -121,7 +124,6 @@ nav>a:hover {
 .story-title {
     width: 100%;
     padding-bottom: 100px;
-    z-index: 10;
 }
 
 .story {
@@ -149,7 +151,6 @@ nav>a:hover {
     padding-top: 50px;
     padding-bottom: 30px;
     height: 110px;
-    z-index: 100;
  }
   
 .title-cadre {
@@ -179,6 +180,7 @@ nav>a:hover {
 
 .pres-link {
     transition: all 100ms cubic-bezier(0.25, 0.1, 0.25, 1);
+    z-index: 99;
 }
 
 .pres-link:hover {
